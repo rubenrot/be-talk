@@ -24,17 +24,12 @@
           value: [],
           notify: true
         },
-        mortgages: {
-          type: Array,
-          value: [],
-          notify: true
-        },
         movements: {
           type: Array,
           value: [],
           notify: true
         },
-        AWSHost: {
+        ReqHost: {
           type: String,
           value: ''
         }
@@ -50,11 +45,6 @@
       return CellsBehaviors.MyRoutesBehavior;
     }
 
-
-    getPositionBalance(evt) {
-      this._doRequest();
-    }
-
     getAccounts(evt) {
       console.log('Request service getAccounts');
       this._doRequestAccounts();
@@ -64,9 +54,6 @@
       this._doRequestCards();
     }
 
-    getMortgages(evt) {
-      this._doRequestMortgages();
-    }
 
     getAccountDetail(evt) {
       this._doAccountDetailRequest();
@@ -78,7 +65,7 @@
 
     _doRequest() {
 
-      this.AWSHost = this.getBehaviors().getHost();
+      this.ReqHost = this.getBehaviors().getHost();
 
       var token = this._getHackatoonsToken();
       this.$.positionDP.headers = {
@@ -100,12 +87,19 @@
     _doRequestAccounts(levelDiscipline, country) {
 
 
-      this.AWSHost = this.getBehaviors().getHost();
+      this.ReqHost = this.getBehaviors().getHost();
+
 
       var token = this._getHackatoonsToken();
       this.$.accountsDP.headers = {
         'x-jwt-auth': token
       };
+
+      if(window.location.hostname === 'localhost'){
+        this.$.accountsDP.method = 'GET';
+      } else {
+        this.$.accountsDP.method = 'POST';
+      }
 
       this.$.accountsDP.body = {
         customerId: '16291993N'
@@ -127,7 +121,7 @@
 
     _doRequestCards(levelDiscipline, country) {
 
-      this.AWSHost = this.getBehaviors().getHost();
+      this.ReqHost = this.getBehaviors().getHost();
 
       var token = this._getHackatoonsToken();
       this.$.cardsDP.headers = {
@@ -147,7 +141,7 @@
 
     _doRequestMortgages(levelDiscipline, country) {
 
-      this.AWSHost = this.getBehaviors().getHost();
+      this.ReqHost = this.getBehaviors().getHost();
 
       var token = this._getHackatoonsToken();
       this.$.mortgagesDP.headers = {
@@ -161,10 +155,6 @@
       this.$.mortgagesDP.generateRequest();
     }
 
-    _onRequestOkMortgages(evt) {
-      const mortgages = evt.detail.items;
-      this.mortgages = Object.assign([], mortgages);
-    }
 
     _getHackatoonsToken() {
       var token = '';
@@ -203,7 +193,7 @@
 
     _doRequestAccountDetail(accountId) {
 
-      this.AWSHost = this.getBehaviors().getHost();
+      this.ReqHost = this.getBehaviors().getHost();
 
       var token = this._getHackatoonsToken();
       this.$.accountDetailDP.headers = {

@@ -4,45 +4,27 @@
 <dom-module id="position-dm">
 
   <template>
-    <cells-generic-dp
-      id="positionDP"
-      host="[[AWSHost]]"
-      path="user:call"
-      method="POST"
-      on-request-success="_onRequestOk">
-    </cells-generic-dp>
 
     <cells-generic-dp
       id="accountsDP"
-      host="[[AWSHost]]"
-      path="user:call"
-      headers='{"x-jwt-auth":"eyJhbGciOiJSUzI1NiIsImtpZCI6IkNOPUV0aGVyIFIzIEVTIElzc3VpbmcgQ0EsT1U9U2VjdXJpdHkgQXJjaGl0ZWN0dXJlIENyeXB0b2dyYXBoeSxPPUJCVkEsQz1FUzo6MTUzNjkxMzMxODQ5MjA3MDkyNCIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJhbm9ueW1vdXMiLCJleHAiOjE1NDI5MTk3NTAsImp0aSI6IjEzZDQxZDM1LTVmYmQtNGEwYS05MTM5LTkzZjJiNWFiM2FhYSIsImlhdCI6MTU0MjkxNzk1MCwiaXNzIjoiU0VDYWFTIiwibmJmIjoxNTQyOTE3OTUwLCJzdWIiOiJFMDUxNTQ3In0.UXB0SzUBNkiVsiY5TsMg_pE6jaIL-OG1BulszPKihgt_LpxhbGqoBdi05OQz-Q09R2surBRNGjXn4te2WrzfpNJ4eL6HK7i-NyH_8VHUVYis5lwggS_mIKV84LWJxuqzZasUVdc40ifngxYSVzdYO5zhsaD_VR8IpzVq4CScMnWzvTO_bbCzBKCKRvpSKY7Gv2LsvOw4NMEK1LwFy-iL6ubHcslvjbdrCWS2YZ1pVHSnVSQ-s8ttJ6aa2QoQgx9CkjypUp9ZVjVhNAiJfwCVmxTxGqCt-6wKXV-TKYX26gzUBb-HUz1gxBwkmR6MiIOfnFBGqIFTkELCdAZp6Vy-dA"}'
+      host="[[ReqHost]]"
+      path="accounts.json"
       method="POST"
       on-request-success="_onRequestOkAccounts">
     </cells-generic-dp>
 
     <cells-generic-dp
       id="cardsDP"
-      host="[[AWSHost]]"
-      path="user:call"
-      headers='{"x-jwt-auth":"eyJhbGciOiJSUzI1NiIsImtpZCI6IkNOPUV0aGVyIFIzIEVTIElzc3VpbmcgQ0EsT1U9U2VjdXJpdHkgQXJjaGl0ZWN0dXJlIENyeXB0b2dyYXBoeSxPPUJCVkEsQz1FUzo6MTUzNjkxMzMxODQ5MjA3MDkyNCIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJhbm9ueW1vdXMiLCJleHAiOjE1NDI5MTk3NTAsImp0aSI6IjEzZDQxZDM1LTVmYmQtNGEwYS05MTM5LTkzZjJiNWFiM2FhYSIsImlhdCI6MTU0MjkxNzk1MCwiaXNzIjoiU0VDYWFTIiwibmJmIjoxNTQyOTE3OTUwLCJzdWIiOiJFMDUxNTQ3In0.UXB0SzUBNkiVsiY5TsMg_pE6jaIL-OG1BulszPKihgt_LpxhbGqoBdi05OQz-Q09R2surBRNGjXn4te2WrzfpNJ4eL6HK7i-NyH_8VHUVYis5lwggS_mIKV84LWJxuqzZasUVdc40ifngxYSVzdYO5zhsaD_VR8IpzVq4CScMnWzvTO_bbCzBKCKRvpSKY7Gv2LsvOw4NMEK1LwFy-iL6ubHcslvjbdrCWS2YZ1pVHSnVSQ-s8ttJ6aa2QoQgx9CkjypUp9ZVjVhNAiJfwCVmxTxGqCt-6wKXV-TKYX26gzUBb-HUz1gxBwkmR6MiIOfnFBGqIFTkELCdAZp6Vy-dA"}'
+      host="[[ReqHost]]"
+      path="user.json"
       method="POST"
       on-request-success="_onRequestOkCards">
     </cells-generic-dp>
 
     <cells-generic-dp
-      id="mortgagesDP"
-      host="[[AWSHost]]"
-      path="mortgages.json"
-      method="GET"
-      on-request-success="_onRequestOkMortgages">
-    </cells-generic-dp>
-
-    <cells-generic-dp
       id="accountDetailDP"
-      host="[[AWSHost]]"
+      host="[[ReqHost]]"
       path="getCuenta:call"
-      headers='{"x-jwt-auth":"eyJhbGciOiJSUzI1NiIsImtpZCI6IkNOPUV0aGVyIFIzIEVTIElzc3VpbmcgQ0EsT1U9U2VjdXJpdHkgQXJjaGl0ZWN0dXJlIENyeXB0b2dyYXBoeSxPPUJCVkEsQz1FUzo6MTUzNjkxMzMxODQ5MjA3MDkyNCIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJhbm9ueW1vdXMiLCJleHAiOjE1NDI5MTk3NTAsImp0aSI6IjEzZDQxZDM1LTVmYmQtNGEwYS05MTM5LTkzZjJiNWFiM2FhYSIsImlhdCI6MTU0MjkxNzk1MCwiaXNzIjoiU0VDYWFTIiwibmJmIjoxNTQyOTE3OTUwLCJzdWIiOiJFMDUxNTQ3In0.UXB0SzUBNkiVsiY5TsMg_pE6jaIL-OG1BulszPKihgt_LpxhbGqoBdi05OQz-Q09R2surBRNGjXn4te2WrzfpNJ4eL6HK7i-NyH_8VHUVYis5lwggS_mIKV84LWJxuqzZasUVdc40ifngxYSVzdYO5zhsaD_VR8IpzVq4CScMnWzvTO_bbCzBKCKRvpSKY7Gv2LsvOw4NMEK1LwFy-iL6ubHcslvjbdrCWS2YZ1pVHSnVSQ-s8ttJ6aa2QoQgx9CkjypUp9ZVjVhNAiJfwCVmxTxGqCt-6wKXV-TKYX26gzUBb-HUz1gxBwkmR6MiIOfnFBGqIFTkELCdAZp6Vy-dA"}'
       method="POST"
       on-request-success="_onRequestOkAccountDetail">
     </cells-generic-dp>

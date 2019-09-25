@@ -4,8 +4,7 @@
   window.CellsPolymer.start({
     routes: {
       'global-position': '/',
-      'account-detail': '/accountDetail',
-      'futureconomy': '/futureconomy',
+      'account-detail': '/accountDetail'
     }
   });
 

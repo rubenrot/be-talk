@@ -150,6 +150,93 @@
         }
       }
 
+      .hbl-btn {
+        cursor: pointer;
+        height: 40px;
+        padding: 12px 40px;
+        margin: 32px 0 16px;
+        font-family: Arial;
+        font-size: 14px;
+        font-weight: 500;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.23;
+        letter-spacing: normal;
+        text-align: center;
+        color: #FFFFFF;
+        background-image: linear-gradient(100deg, #1464A5 50%, #1973B8 50%);
+        background-size: 250% 100% !important;
+        background-position: right !important;
+        transition: all 0.5s ease;
+        border: none;
+        outline: none;
+      }
+
+      .hbl-btn.secondary {
+        background-image: linear-gradient(100deg, #052954 50%, #043263 50%);
+      }
+
+      .hbl-btn.link {
+        color: #1973B8;
+        background: transparent;
+      }
+
+      .hbl-btn.link:hover {
+        color: #004481;
+      }
+
+      .hbl-btn[disabled] {
+        background: #E9E9E9;
+        color: #BDBDBD;
+        cursor: not-allowed;
+      }
+
+      button:hover.hbl-btn {
+        background-position: left !important;
+        color: rgba(255, 255, 255, 0.6);
+      }
+
+      input {
+        outline: none;
+        border: none;
+      }
+
+      input{
+        border: none;
+        padding: 10px;
+        margin: 10px;
+        height: 20px;
+        width: 500px;
+        border:1px solid #eaeaea;
+        outline:none;
+      }
+      input:hover{
+        border-color: #a0a0a0 #b9b9b9 #b9b9b9 #b9b9b9;
+      }
+      input:focus{
+        border-color:#4d90fe;
+      }
+
+      input[type="submit"] {
+        border-radius: 2px;
+        background: #f2f2f2;
+        border: 1px solid #f2f2f2;
+        color: #757575;
+        cursor: default;
+        font-size: 14px;
+        font-weight: bold;
+        width: 100px;
+        padding: 0 16px;
+        height:36px;
+      }
+      input[type="submit"]:hover {
+        box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+        background: #f8f8f8;
+        border: 1px solid #c6c6c6;
+        box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+        color: #222;
+      }
+
     </style>
 
   </template>
