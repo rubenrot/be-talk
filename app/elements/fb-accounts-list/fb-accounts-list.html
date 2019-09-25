@@ -15,24 +15,31 @@
       <thead class="head-descriptors">
         <tr class="row-descriptors">
           <th class="account-number">NÚMERO DE CUENTA</th>
-
+          <th class="account-number">SALDO TOTAL</th>
+          <th class="account-number">SALDO DISPONIBLE</th>
         </tr>
       </thead>
       <template is="dom-repeat" items="[[accounts]]" as="account" index-as="index">
         <tbody class="body-account-fields">
 
-        <tr id$="desktop-summary-[[account.id]]" class="row-accounts-fields animated fadeInUp" data-request-id$="[[account.id]]" data-request-status-id$="[[account.id]]"
+        <tr id$="desktop-summary-[[account.contract.account.formats.iban]]" class="row-accounts-fields animated fadeInUp" data-request-id$="[[account.contract.account.formats.iban]]" data-request-status-id$="[[account.contract.account.formats.iban]"
             data-viewport="desktop" on-tap="_handleTapOnSummaryElement">
 
           <td class="account-number accounts-fields__account-number">
-            <span class="transform">[[account.id]]</span>
+            <span class="transform">[[account.contract.account.formats.iban]]</span>
+          </td>
+          <td class="account-number accounts-fields__account-number">
+            <span class="transform">[[account.contract.balance.amount]]</span>
+          </td>
+          <td class="account-number accounts-fields__account-number">
+            <span class="transform">[[account.contract.availableBalance.amount]]</span>
           </td>
 
 
         </tr>
-        <tr class$="desktop-summary desktop-summary-[[account.id]] animated fadeInDown" hidden on-tap="_handleClickOnSummary">
+        <tr class$="desktop-summary desktop-summary-[[account.contract.account.formats.iban]] animated fadeInDown" hidden on-tap="_handleClickOnSummary">
           <td>
-            <div id$="desktop-summary-[[account.id]]">hola</div>
+            <div id$="desktop-summary-[[account.contract.account.formats.iban]]">hola</div>
           </td>
         </tr>
 
