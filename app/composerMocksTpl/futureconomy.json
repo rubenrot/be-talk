@@ -1,0 +1,32 @@
+{
+  "template": {
+    "tag": "cells-template-zones",
+    "properties": {
+      "disableEdgeSwipe": true,
+      "headerFixed": true
+    }
+  },
+  "components": [
+    {
+      "zone": "app__header",
+      "familyPath": "../elements/template/fb-header",
+      "tag": "fb-header"
+    },
+    {
+      "zone": "app__main",
+      "familyPath": "../elements/futureconomy",
+      "tag": "futureconomy-view",
+      "properties": {
+        "cellsConnections": {
+          "in": {
+            "ch_futureconomy_view": {
+              "bind": "geAccountDetail"
+            }
+          },
+          "out": {
+          }
+        }
+      }
+    }
+  ]
+}

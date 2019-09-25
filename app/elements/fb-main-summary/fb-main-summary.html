@@ -1,0 +1,40 @@
+<link rel="import" href="../../elements/fb-cif-selector/fb-cif-selector.html">
+<link rel="import" href="../../elements/fb-summary-bar/fb-summary-bar.html">
+
+<link rel="import" href="fb-main-summary-styles.html">
+
+<dom-module id="fb-main-summary">
+
+  <template>
+
+    <style include="fb-main-summary-styles"></style>
+
+
+    <div class="container">
+      <div class="cif__selector-container">
+        <fb-cif-selector></fb-cif-selector>
+      </div>
+      <figure class="graphic">
+        <fb-summary-bar class="graphic-total"
+                        color="gold"
+                        label="Inversión"
+                        amount="[[_investment]]"
+                        currency="EUR"
+                        sizebar="[[_investmentSize]]"
+                        show-scaled></fb-summary-bar>
+
+        <fb-summary-bar class="graphic-partials"
+                        color="teal"
+                        label="Financiación"
+                        amount="[[_financing]]"
+                        currency="EUR"
+                        sizebar="[[_financingSize]]"
+                        show-scaled></fb-summary-bar>
+      </figure>
+    </div>
+
+  </template>
+
+  <script src="fb-main-summary.js"></script>
+
+</dom-module>

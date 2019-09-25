@@ -1,0 +1,84 @@
+{
+  "id": "IBAN-0",
+  "total": 60000.0,
+  "movimientos": [
+    {
+      "eventType": "deposit",
+      "iban": "IBAN-0",
+      "amount": {
+        "currency": "EUR",
+        "value": 30.0
+      },
+      "balance": {
+        "currency": "EUR",
+        "value": 2706285.0
+      },
+      "date": "2017-10-08T00:00:00Z"
+    },
+    {
+      "eventType": "deposit",
+      "iban": "IBAN-0",
+      "amount": {
+        "currency": "EUR",
+        "value": 20.0
+      },
+      "balance": {
+        "currency": "EUR",
+        "value": 2706255.0
+      },
+      "date": "2017-10-08T00:00:00Z"
+    },
+    {
+      "eventType": "deposit",
+      "iban": "IBAN-0",
+      "amount": {
+        "currency": "EUR",
+        "value": 240000.0
+      },
+      "balance": {
+        "currency": "EUR",
+        "value": 300000.0
+      },
+      "date": "2017-10-05T00:00:00Z"
+    },
+    {
+      "eventType": "deposit",
+      "iban": "IBAN-0",
+      "amount": {
+        "currency": "EUR",
+        "value": 38.0
+      },
+      "balance": {
+        "currency": "EUR",
+        "value": 2706234.0
+      },
+      "date": "2017-10-08T00:00:00Z"
+    },
+    {
+      "eventType": "deposit",
+      "iban": "IBAN-0",
+      "amount": {
+        "currency": "EUR",
+        "value": 13.0
+      },
+      "balance": {
+        "currency": "EUR",
+        "value": 2706195.0
+      },
+      "date": "2017-10-08T00:00:00Z"
+    },
+    {
+      "eventType": "deposit",
+      "iban": "IBAN-0",
+      "amount": {
+        "currency": "EUR",
+        "value": 60000.0
+      },
+      "balance": {
+        "currency": "EUR",
+        "value": 60000.0
+      },
+      "date": "2017-10-05T00:00:00Z"
+    }
+  ]
+}

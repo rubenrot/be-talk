@@ -1,0 +1,527 @@
+<dom-module id="fb-cards-list-styles">
+
+  <template>
+    <style>
+      :host {
+        display: block;
+        margin-bottom: 20px;
+
+        /* Important: The next line is a hack for firefox do not delete */
+        position: relative;
+
+        --row: {
+          display: flex;
+          align-items: center;
+          height: 40px;
+          max-height: 40px;
+          margin: 0 10px
+        };
+      }
+
+      cells-atom-icon {
+        background: var(--bbva-white);
+        color: var(--bbva-dark-light-blue);
+        cursor: pointer;
+        margin-left: 10px;
+        margin-top: -2px
+      }
+
+      ul,
+      li {
+        @apply(--fb-reset-list);
+      }
+
+      li[hidden] {
+        display: none
+      }
+
+      tfoot[hidden] {
+        display: none
+      }
+
+      cells-st-button.info {
+        --cells-st-button-text-color-transparent: var(--bbva-white-medium-blue)
+      }
+
+      .info iron-icon {
+        color: var(--bbva-new-dark-orange);
+        height: 19px;
+        width: 19px
+      }
+
+      .denied-tooltip {
+        --fb-tooltip-menu-background-color: var(--bbva-new-dark-orange);
+        --fb-tooltip-menu-arrow-color: transparent var(--bbva-new-dark-orange) var(--bbva-new-dark-orange) transparent
+      }
+
+      .denied-tooltip p {
+        color: #ffffff;
+        font-size: var(--cells-text-size-14, 14px)
+      }
+
+      .action-card ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0
+      }
+
+      .action-card ul li button {
+        background-color: transparent;
+        border: none;
+        color: var(--bbva-medium-blue, #237aba);
+        font-size: var(--cells-text-size-14, 14px);
+        padding: 10px 0;
+        line-height: 18px;
+        font-weight: 500;
+        cursor: pointer
+      }
+
+      .action-card ul li button[disabled] {
+        color: #e9e9e9
+      }
+
+      .action-card iron-icon {
+        --iron-icon-width: 18px;
+        --iron-icon-height: 18px;
+        margin-right: 10px;
+        vertical-align: middle
+      }
+
+      .fb-card-list__desktop {
+        width: 100%;
+        display: none
+      }
+
+      .row-descriptors,
+      .row-cards-fields,
+      .row-cards-fields__no-cards,
+      .row-footer {
+        @apply(--row);
+      }
+
+      .row-descriptors {
+        margin: 0
+      }
+
+      .row-cards-fields {
+        height: 50px;
+        max-height: 50px
+      }
+
+      tbody:nth-child(even) > tr:first-child {
+        background-color: rgba(212, 237, 252, .3)
+      }
+
+      .row-cards-fields:nth-child(4n - 1) {
+        margin: 0 10px
+      }
+
+      .row-footer {
+        justify-content: center
+      }
+
+      .row-footer:first-child {
+        height: 20px
+      }
+
+      tr[hidden] {
+        visibility: hidden
+      }
+
+      div[hidden] {
+        display: none
+      }
+
+      td {
+        padding-right: 8px;
+        font-size: var(--cells-text-size-14, 14px);
+        line-height: var(--cells-text-size-18, 18px)
+      }
+
+      td:last-child {
+        padding-right: 0
+      }
+
+      .head-descriptors {
+        font-size: var(--cells-text-size-12, 12px);
+        text-transform: uppercase
+      }
+
+      .body-card-fields {
+        font-size: var(--cells-text-size-14, 14px)
+      }
+
+      .creation-date {
+        width: 9%;
+        max-width: 9%;
+      }
+
+      .emited-date {
+        width: 10%;
+        max-width: 10%
+      }
+
+      .card-number,
+      .card-fields__card-number {
+        width: 40%;
+        max-width: 40%
+      }
+
+      .card-number::first-letter,
+      .card-fields__card-number::first-letter {
+        text-transform: uppercase
+      }
+
+      .cards-fields__card-number {
+        color: var(--fb-button-active)
+      }
+
+      .identifier {
+        width: 24%;
+        max-width: 24%
+      }
+
+      .state,
+      .cards-fields__state {
+        display: flex;
+        width: 9%;
+        max-width: 9%;
+        text-align: center;
+        justify-content: center
+      }
+
+      .card-fields__state {
+        font-size: var(--cells-text-size-xxxs);
+        color: var(--bbva-white)
+      }
+
+      .status-color__draft {
+        background-color: var(--bbva-orange)
+      }
+
+      .status-color__in-process {
+        background-color: var(--bbva-new-semi-dark)
+      }
+
+      .status-color__issued {
+        background-color: var(--bbva-green, #48ae64)
+      }
+
+      .status-color__denied {
+        background-color: var(--bbva-new-dark-orange)
+      }
+
+      .status-color__unknown {
+        background-color: var(--bbva-500)
+      }
+
+      .status-content {
+        width: 70%;
+        height: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center
+      }
+
+      .status-shape {
+        border-right: 7px solid transparent;
+        border-top: 20px solid
+      }
+
+      .status-shape__draft {
+        border-top-color: var(--bbva-orange)
+      }
+
+      .status-shape__in-process {
+        border-top-color: var(--bbva-new-semi-dark)
+      }
+
+      .status-shape__issued {
+        border-top-color: var(--bbva-green, #48ae64)
+      }
+
+      .status-shape__denied {
+        border-top-color: var(--bbva-new-dark-orange)
+      }
+
+      .status-shape__unknown {
+        border-top-color: var(--bbva-500)
+      }
+
+      .amount,
+      .cards-fields__amount {
+        width: 11%;
+        max-width: 11%;
+        text-align: right
+      }
+
+      .cards-fields__amount {
+        font-size: var(--cells-text-size-16)
+      }
+
+      cells-atom-amount {
+        font-size: var(--cells-text-size-18)
+      }
+
+      thead th.modifiable {
+        /* width: ;
+        max-width: ; */
+        text-align: right
+      }
+
+      .modifiable cells-st-button {
+        --cells-st-button-text-color-transparent: #237aba;
+        --cells-st-button-text-color-transparent-hover: var(--bbva-dark-medium-blue)
+      }
+
+      .row-cards-fields__no-cards {
+        background-color: #f4f4f4;
+        max-height: 50px;
+        height: 50px
+      }
+
+      .no-card__desktop-text {
+        margin-left: 40px
+      }
+
+      .total-cards {
+        opacity: .6;
+        color: var(--bbva-500);
+        font-size: var(--cells-text-size-12);
+        text-transform: lowercase;
+
+        @apply(--cells-fontDefaultMediumItalic);
+      }
+
+      .show-more {
+        font-size: var(--cells-text-size-14);
+        display: flex;
+        align-items: center;
+        --cells-st-button-text-color-transparent: #237aba;
+        --cells-st-button-text-color-transparent-hover: var(--bbva-dark-medium-blue)
+      }
+
+      .show-more__icon {
+        height: 20px;
+        width: 20px;
+        margin-right: 6px
+      }
+
+      .show-more__text {
+        margin-left: 6px
+      }
+
+      .with-cursor {
+        cursor: pointer
+      }
+
+      @keyframes fadeInDown {
+        from {
+          opacity: 0;
+          -webkit-transform: translate3d(0, -5%, 0);
+          transform: translate3d(0, -5%, 0)
+        }
+
+        to {
+          opacity: 1;
+          -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0)
+        }
+      }
+
+      .fadeInDown {
+        animation-name: fadeInDown
+      }
+
+      /** Mobile styles **/
+
+      .fb-card-list__mobile {
+        display: flex;
+        flex-direction: column;
+        padding: 15px 0;
+        margin: 0;
+        font-size: var(--cells-text-size-12)
+      }
+
+      .mobile-descriptors {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        text-transform: uppercase
+      }
+
+      .cards-fields__mobile {
+        list-style: none;
+        padding: 10px 0
+      }
+
+      .fields-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 0
+      }
+
+      .card-number__mobile {
+        color: var(--fb-button-active, #237aba);
+        margin-right: 10px;
+        width: 70%
+      }
+
+      .amount__mobile {
+        text-align: right;
+        font-size: var(--cells-text-size-16)
+      }
+
+      .identifier__mobile {
+        width: 70%
+      }
+
+      .state__mobile {
+        color: var(--bbva-white);
+        display: flex;
+        font-size: var(--cells-text-size-xxxs);
+        text-align: center;
+        width: 90px
+      }
+
+      .status-content__mobile {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-grow: 1
+      }
+
+      .line-card-separator {
+        width: 100%;
+        border-top: 1px solid #666666
+      }
+
+      .list-footer {
+        list-style: none;
+        display: flex;
+        align-items: center;
+        flex-direction: column
+      }
+
+      .footer-container {
+        height: 30px
+      }
+
+      .animated {
+        animation-duration: 3s;
+        animation-fill-mode: both
+      }
+
+      .transform {
+        display: block
+      }
+
+      @keyframes fadeInUp {
+        from {
+          opacity: 0;
+          transform: translate3d(0, 100%, 0)
+        }
+
+        to {
+          opacity: 1;
+          transform: none
+        }
+      }
+
+      .fadeInUp {
+        animation-name: fadeInUp
+      }
+
+      @media screen and (min-width: 992px) {
+        .limit-amount {
+
+          --cells-atom-amount-fractional: {
+            font-size: var(--cells-text-size-14);
+            line-height: 8px
+          };
+
+          --cells-atom-amount-currency: {
+            font-size: var(--cells-text-size-14);
+            line-height: 8px
+          };
+        }
+
+        thead tr {
+          padding: 0 22px
+        }
+
+        thead th {
+          padding-right: 8px;
+          font-weight: var(--cells-text-weight-normal, 400);
+          text-align: left;
+          text-transform: uppercase !important;
+          align-items: center;
+          display: flex
+        }
+
+        thead th.state {
+          justify-content: left
+        }
+
+        tbody tr {
+          padding: 0 22px;
+          margin: 0 !important
+        }
+
+        tbody td.state {
+          justify-content: left
+        }
+
+        .fb-card-list__desktop {
+          display: table
+        }
+
+        .no-cards__desktop-text {
+          margin-left: 10px
+        }
+
+        .fb-cards-list__mobile {
+          display: none
+        }
+
+        .modifiable {
+          width: 3%;
+          max-width: 3%;
+          text-align: right
+        }
+
+        table {
+          border-spacing: 5px;
+          border-collapse: collapse
+        }
+
+        table tr.row-cards-fields:hover {
+          background-color: rgba(212, 237, 252, .8)
+        }
+
+        table th.amount {
+          text-align: right
+        }
+
+        .desktop-summary td {
+          padding: 0
+        }
+
+        .total-cards {
+          margin-top: 10px
+        }
+
+        .row-descriptors {
+          height: 60px;
+          max-height: 60px
+        }
+
+        .amount {
+          justify-content: flex-end
+        }
+      }
+    </style>
+  </template>
+
+</dom-module>

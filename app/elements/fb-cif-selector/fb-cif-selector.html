@@ -1,0 +1,29 @@
+<link rel="import" href="../../../components/cells-select/cells-select.html">
+
+<link rel="import" href="fb-cif-selector-styles.html">
+
+<dom-module id="fb-cif-selector">
+    <div>cif selector</div>
+  <template>
+
+    <style include="fb-cif-selector-styles"></style>
+
+      <cells-select label=""
+                    right-icon="coronita:unfold"
+                    selected-option="[[_selectedCif]]"
+                    options="[[_availableCifs]]">
+      </cells-select>
+
+    <template is="dom-if" if="{{disabled}}">
+      <div class="disabled">
+        <span>{{socialReason}}</span>
+        <!--<span class="separator"> • </span>-->
+        <span>{{cif}}</span>
+      </div>
+    </template>
+
+  </template>
+
+  <script src="fb-cif-selector.js"></script>
+
+</dom-module>

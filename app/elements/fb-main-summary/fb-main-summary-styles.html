@@ -1,0 +1,102 @@
+<dom-module id="fb-main-summary-styles">
+  <template>
+    <style>
+
+      :host {
+        display: block;
+        background: var( --bbva-white, #ffffff );
+        border-radius: 1px;
+        box-shadow: 0 1px 1px 0 rgba( 0, 0, 0, .2 );
+      }
+
+      .container {
+        position: relative;
+        z-index: 0;
+      }
+
+      h2 {
+        font-size: var( --cells-text-size-18 );
+        color: #237aba;
+
+        @apply( --cells-fontDefaultMedium );
+      }
+
+      h2::after {
+        content: '.';
+        margin: 0 0 0 15px;
+        font-weight: var( --cells-text-weight-bold );
+      }
+
+      .endorsee-title {
+        font-size: var( --cells-text-size-20 );
+        margin-bottom: 16px;
+        padding: 0 18px;
+
+        @apply(--cells-fontDefaultMedium);
+      }
+
+      .endorsee-doc::before {
+        content: '\2022';
+        padding-right: 10px;
+      }
+
+      .endorsee-doc {
+        display: block;
+        margin: 16px 0 13px;
+        font-size: var( --cells-text-size-18 );
+
+        @apply (--cells-fontDefaultLight);
+      }
+
+      .graphic {
+        padding: 0;
+        margin: 0;
+      }
+
+      .line-section-separator {
+        border-top: 1px solid #979797;
+        margin-top: 12px;
+        opacity: .2;
+      }
+
+      @media screen and (max-width: 991px) {
+        .cif__selector-container {
+          background: var( --bbva-white, #ffffff );
+          border-bottom: 1px solid var( --cells-select-item-border-top-color, #e5e5e5 );
+          padding: 1rem 0;
+        }
+      }
+
+      @media screen and (min-width: 992px) {
+        :host {
+          box-shadow: 0 1px 1px 0 rgba( 0, 0, 0, .2 );
+        }
+
+        fb-summary-bar {
+          padding: 5px;
+          z-index: 0;
+        }
+
+        .container {
+          padding: 2px 62px;
+          border-radius: 1px;
+          background-color: var( --bbva-white );
+        }
+
+        .endorsee-doc {
+          display: inline;
+        }
+
+        .line-section-separator {
+          background: var( --bbva-white );
+        }
+
+        .cif__selector-container {
+          border-bottom: 1px solid var( --cells-select-item-border-top-color, #e5e5e5 );
+          margin: 0 -62px;
+        }
+      }
+
+    </style>
+  </template>
+</dom-module>

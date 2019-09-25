@@ -1,0 +1,37 @@
+<link rel="import" href="../../../components/cells-coronita-base-theme/cells-coronita-base-theme.html">
+<link rel="import" href="../../elements/fb-account-movements-list/fb-account-movements-list.html">
+
+<link rel="import" href="account-detail-styles.html">
+
+<dom-module id="account-detail-view">
+  <template>
+    <style include="account-detail-styles page-styles"></style>
+
+    <div class="row row--gray">
+      <div class="container">
+        <section class="main-summary">
+          <fb-card-detail></fb-card-detail>
+        </section>
+      </div>
+    </div>
+
+
+    <div class="row row--white">
+      <div class="container">
+
+        <section class="fb__lines-wrapper">
+
+          <h2 class="heading__medium-2" on-click="_detail">Detalle de movimientos</h2>
+          <hr>
+
+          <fb-account-movements-list movements="[[movements]]">
+          </fb-account-movements-list>
+
+        </section>
+
+      </div>
+    </div>
+
+  </template>
+  <script src="account-detail-view.js"></script>
+</dom-module>

@@ -1,0 +1,254 @@
+<!--
+
+## Styling
+
+The following custom properties and mixins are available for styling:
+
+| Custom property                           | Description                              | Default                          |
+|:------------------------------------------|:-----------------------------------------| :-------------------------------:|
+| --cells-fontDefault                       | Font family for :host                    | sans-serif                       |
+| --cells-select                            | Mixin applied to :host                   | {}                               |
+| --cells-select-color                      | Color of :host                           | var(--bbva-600, #121212)         |
+| --cells-select-bg-color                   | Background color of :host                | var(--bbva-100, #F4F4F4)         |
+| --cells-select-opened                     | Mixin applied to opened :host            | {}                               |
+| --cells-select-header                     | Mixin applied to .header                 | {}                               |
+| --cells-select-header-icon                | Mixin applied to .header's icon          | {}                               |
+| --cells-select-header-icon-color          | Color of .header's icon                  | var(--bbva-medium-blue, #2A86CA) |
+| --cells-select-headertexts                | Mixin applied to texts in header         | {}                               |
+| --cells-select-label                      | Mixin applied to label                   | {}                               |
+| --cells-select-label-color                | Color of label                           | var(--bbva-500, #666)            |
+| --cells-select-placeholder                | Mixin applied to placeholder             | {}                               |
+| --cells-select-placeholder-color          | Color of placeholder                     | var(--bbva-600, #121212)         |
+| --cells-select-options                    | Mixin applied to .options                | {}                               |
+| --cells-select-options-item               | Mixin applied to .options-item           | {}                               |
+| --cells-select-disabled                   | Mixin applied to disabled :host          | {}                               |
+| --cells-select-disabled-header-color      | Color of disabled :host's header         | var(--bbva-500, #666)            |
+| --cells-select-disabled-header            | Mixin applied to disabled :host's header | {}                               |
+| --cells-select-disabled-header-icon-color | Color of disabled :host's header's icon  | var(--bbva-400, #bdbdbd)         |
+
+
+## Styling Item
+
+The following custom properties and mixins are available for styling:
+
+| Custom property                                        | Description                                     | Default                  |
+|:-------------------------------------------------------|:------------------------------------------------| :-----------------------:|
+| --cells-fontDefault                                    | Font family of :host                            | sans-serif               |
+| --cells-select-item                                    | Mixin applied to :host                          | {}                       |
+| --cells-select-item-color                              | Color of :host                                  | var(--bbva-500, #666)    |
+| --cells-select-item-border-top-color                   | Color of separator between items                | #E5E5E5                  |
+| --cells-select-item-lastchild                          | Mixin applied to :host's last-child             | {}                       |
+| --cells-select-item-sibling                            | Mixin applied to sibling of :host               | {}                       |
+| --cells-select-item-inheader                           | Mixin applied to :host in context of .header    | {}                       |
+| --cells-select-item-inheader-icon                      | Mixin applied to .icon in context of .header    | {}                       |
+| --cells-select-item-inheader-title                     | Mixin applied to .title in context of .header   | {}                       |
+| --cells-select-item-selected                           | Mixin applied to [selected] :host               | {}                       |
+| --cells-select-item-selected-color                     | Color of [selected] :host                       | var(--bbva-600, #121212) |
+| --cells-select-item-selected-before                    | Mixin applied to ::before of [selected] :host   | {}                       |
+| --cells-select-item-selected-before-bg-color           | Background color of ::before's [selected] :host | transparent              |
+| --cells-select-item-selected-before-border-top-color   | Border top color of ::before's [selected] :host | var(--bbva-200, #e9e9e9) |
+| --cells-select-item-hover                              | Mixin applied to :hover                         | {}                       |
+| --cells-select-item-hover-before                       | Mixin applied to :hover:before                  | {}                       |
+| --cells-select-item-focused                            | Mixin applied to focused :host                  | {}                       |
+| --cells-select-item-title                              | Mixin applied to .title                         | {}                       |
+| --cells-select-item-description-color                  | Color of description                            | #434A58                  |
+| --cells-select-item-description                        | Mixin applied to .description                   | {}                       |
+| --cells-select-icon                                    | Mixin applied to .icon                          | {}                       |
+| --cells-select-custom                                  | Mixin applied to .custom                        | {}                       |
+| --cells-select-custom-title                            | Mixin applied to custom title                   | {}                       |
+| --cells-select-custom-icon                             | Mixin applied to custom icon                    | {}                       |                          | Mixin applied to custom icon                    | {}                       |
+
+-->
+
+
+<dom-module id="fb-cif-selector-styles">
+  <template>
+    <style>
+
+      :host {
+        font-family: var( --cells-fontDefault );
+        font-size: var( --cells-text-size-18 );
+        width: 100%;
+        display: flex;
+        flex-flow: row wrap;
+        min-height: 50px;
+        height: 4.6rem;
+        background: var( --bbva-white );
+
+        @apply (--fb-cif-selector-styles);
+      }
+
+      :host([type='single']) {
+        margin-bottom: 25px
+      }
+
+      cells-select {
+        position: absolute;
+        background: var( --bbva-white );
+        cursor: pointer;
+
+        --cells-select-item-description: {
+          text-align: left;
+          color: var( --bbva-new-medium-blue )
+        };
+
+        --cells-select-item-title: {
+          overflow: visible;
+          padding-right: 10px;
+          font-weight: var( --cells-text-weight-medium )
+        };
+
+        --cells-select-item-description-color: {
+          color: var( --bbva-new-medium-blue )
+        };
+
+        --cells-select-item-hover: {
+          background-color: transparent
+        };
+
+        --cells-select: {
+          width: 100%;
+          outline: none;
+          padding: 0 16px
+        };
+
+        --cells-select-header: {
+          height: 4.6rem
+        };
+
+        --cells-select-headertexts: {
+          width: auto !important;
+          text-overflow: ellipsis
+        };
+
+        --cells-select-placeholder: {
+          z-index: 0;
+          color: var( --bbva-new-medium-blue );
+          font-size: var( --cells-text-size-16 );
+          line-height: var( --cells-text-size-24 );
+          text-overflow: ellipsis
+        };
+
+        --cells-select-header-icon: {
+          text-align: right;
+          width: 45px;
+          height: 25px
+        };
+
+        --cells-select-label: {
+          display: none;
+          color: var( --bbva-new-medium-blue )
+        };
+
+        --cells-select-item-selected-before: {
+          border-top: 0 !important
+        };
+      }
+
+      cells-select[opened] {
+        z-index: 1;
+
+        --cells-select-item-hover: {
+          background-color: rgba( 189, 189, 189, .2 )
+        };
+
+        --cells-select-item-title: {
+          padding-right: .625rem;
+          font-weight: var( --cells-text-weight-medium );
+          color: var( --bbva-new-medium-blue )
+        };
+
+        --cells-select-headertexts: {
+          padding-right: 0
+        };
+
+        --cells-select-header-icon: {
+          text-align: right;
+          width: 45px;
+          height: 25px;
+          transform: rotate( 180deg );
+          cursor: pointer
+        };
+
+        --cells-select-placeholder: {
+          z-index: 0;
+          color: var( --bbva-new-medium-blue );
+          font-size: var( --cells-text-size-16 );
+          line-height: var( --cells-text-size-24 )
+        };
+      }
+
+      @media (max-width: 991px) {
+        cells-select {
+          padding-left: 0;
+          padding-right: 0;
+
+          --cells-select-label: {
+            display: none
+          };
+
+          --cells-select-item: {
+            display: flex;
+            flex-flow: column wrap;
+            align-items: left
+          };
+
+          --cells-select-item-title: {
+            height: 37px;
+            padding-left: 0;
+            font-weight: var( --cells-text-weight-medium );
+            width: 100%
+          };
+
+          --cells-select-item-description: {
+            color: var( --bbva-new-medium-blue );
+            text-align: left !important
+          };
+
+          --cells-select-options: {
+            padding-left: 13px;
+            padding-right: 13px;
+            padding-top: 1rem
+          };
+
+          --cells-select-headertexts: {
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            width: 90% !important
+          }
+        }
+      }
+
+      @media screen and (max-width: 991px) {
+        cells-select {
+          --cells-select-header: {
+            align-items: end
+          };
+        }
+      }
+
+      @media screen and (min-width: 992px) {
+        cells-select {
+          --cells-select: {
+            padding: 0;
+            padding-left: 50px
+          };
+
+          --cells-select-headertexts: {
+            width: auto !important
+          };
+        }
+      }
+
+      .disabled {
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        cursor: default;
+        font-weight: 400;
+        padding: 0 3rem
+      }
+
+    </style>
+  </template>
+</dom-module>

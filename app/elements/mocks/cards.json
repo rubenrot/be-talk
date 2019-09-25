@@ -1,0 +1,1936 @@
+{
+  "items": [
+    {
+      "id": "ES0182002000000000000000000355194491XXXXXXXXX",
+      "currentBalance": {
+        "currency": "EUR",
+        "amount": 0
+      },
+      "availableBalance": {
+        "currency": "EUR",
+        "amount": 0
+      },
+      "formats": {
+        "iban": "ES9701825003100201550380"
+      },
+      "participants": [
+        {
+          "name": "CARAVANAS EUROPEAS PAMPLONA S.L."
+        }
+      ],
+      "currency": {
+        "code": "EUR"
+      },
+      "product": {
+        "id": "0000011828",
+        "name": "CUENTA PYMES BIENVENIDA"
+      }
+    },
+    {
+      "id": "ES0182002000000000000000000003399207XXXXXXXXX",
+      "currentBalance": {
+        "currency": "EUR",
+        "amount": 0
+      },
+      "availableBalance": {
+        "currency": "EUR",
+        "amount": 0
+      },
+      "formats": {
+        "iban": "ES9701822363080201521458"
+      },
+      "participants": [
+        {
+          "name": "LACTALIS COMPRAS Y SUMINISTROS S.L."
+        }
+      ],
+      "currency": {
+        "code": "EUR"
+      },
+      "product": {
+        "id": "0CA0000013",
+        "name": "ORDINARIA N/CONSUM RESIDENTE"
+      }
+    },
+    {
+      "id": "ES0182002000000000000000000267068346XXXXXXXXX",
+      "currentBalance": {
+        "currency": "EUR",
+        "amount": 0
+      },
+      "availableBalance": {
+        "currency": "EUR",
+        "amount": 0
+      },
+      "formats": {
+        "iban": "ES9601823999340201580701"
+      },
+      "participants": [
+        {
+          "name": "DACHSER SE"
+        }
+      ],
+      "currency": {
+        "code": "EUR"
+      },
+      "product": {
+        "id": "0000005635",
+        "name": "CTA ORDINARIA REMUNE BEC-COR BEC"
+      }
+    },
+    {
+      "id": "ES0182002000000000000000000257620759XXXXXXXXX",
+      "currentBalance": {
+        "currency": "EUR",
+        "amount": 70240.26
+      },
+      "availableBalance": {
+        "currency": "EUR",
+        "amount": 70240.26
+      },
+      "formats": {
+        "iban": "ES9501826874830208579394"
+      },
+      "participants": [
+        {
+          "name": "EL JINETE PALIDO INVERSIONES INMOBILIARIAS S.L."
+        }
+      ],
+      "currency": {
+        "code": "EUR"
+      },
+      "product": {
+        "id": "0000010285",
+        "name": "CUENTA VENTAJAS PYMES"
+      }
+    },
+    {
+      "id": "ES0182001000000000000000000161179589XXXXXXXXX",
+      "currentBalance": {
+        "currency": "EUR",
+        "amount": 167424.96
+      },
+      "availableBalance": {
+        "currency": "EUR",
+        "amount": 267290.08
+      },
+      "formats": {
+        "iban": "ES9501822339600101507908"
+      },
+      "participants": [
+        {
+          "name": "CLEAR PET S.L."
+        }
+      ],
+      "currency": {
+        "code": "EUR"
+      },
+      "product": {
+        "id": "0CC0000016",
+        "name": "CTA.CREDITO ORDINARIA"
+      }
+    },
+    {
+      "id": "ES0182001000000000000000000264204703XXXXXXXXX",
+      "currentBalance": {
+        "currency": "EUR",
+        "amount": -67677.56
+      },
+      "availableBalance": {
+        "currency": "EUR",
+        "amount": 32322.44
+      },
+      "formats": {
+        "iban": "ES9401822200120101516064"
+      },
+      "participants": [
+        {
+          "name": "DROGUERIA ROVIAL S.L."
+        }
+      ],
+      "currency": {
+        "code": "EUR"
+      },
+      "product": {
+        "id": "0CC0000016",
+        "name": "CTA.CREDITO ORDINARIA"
+      }
+    },
+    {
+      "id": "ES0182002000000000000000000005935875XXXXXXXXX",
+      "currentBalance": {
+        "currency": "EUR",
+        "amount": 171.82
+      },
+      "availableBalance": {
+        "currency": "EUR",
+        "amount": 171.82
+      },
+      "formats": {
+        "iban": "ES9301825461040201521153"
+      },
+      "participants": [
+        {
+          "name": "GRUPO CONTROL EMPRESA DE SEGURIDAD S.A."
+        }
+      ],
+      "currency": {
+        "code": "EUR"
+      },
+      "product": {
+        "id": "0000005037",
+        "name": "CUENTA ORDINARIA NO CONS. BEC"
+      }
+    },
+    {
+      "id": "ES0182000100000000000000000001974809XXXXXXXXX",
+      "currentBalance": {
+        "currency": "EUR",
+        "amount": -4933194.41
+      },
+      "availableBalance": {
+        "currency": "EUR",
+        "amount": -4933194.41
+      },
+      "formats": {
+        "iban": "ES9201823999310011506801"
+      },
+      "participants": [
+        {
+          "name": "COMERCIAL DE LAMINADOS IBERICA S.A."
+        }
+      ],
+      "currency": {
+        "code": "EUR"
+      },
+      "product": {
+        "id": "0CA0000013",
+        "name": "ORDINARIA N/CONSUM RESIDENTE"
+      }
+    },
+    {
+      "id": "ES0182002000000000000000000157023707XXXXXXXXX",
+      "currentBalance": {
+        "currency": "EUR",
+        "amount": 117172.92
+      },
+      "availableBalance": {
+        "currency": "EUR",
+        "amount": 117172.92
+      },
+      "formats": {
+        "iban": "ES9001823994020208504741"
+      },
+      "participants": [
+        {
+          "name": "SUPERMERCADOS SABECO S.A."
+        }
+      ],
+      "currency": {
+        "code": "EUR"
+      },
+      "product": {
+        "id": "0CA0000028",
+        "name": "CUENTA ORDINARIA BBVA"
+      }
+    },
+    {
+      "id": "ES0182001000000000000000000273093609XXXXXXXXX",
+      "currentBalance": {
+        "currency": "EUR",
+        "amount": -42460.83
+      },
+      "availableBalance": {
+        "currency": "EUR",
+        "amount": 77539.17
+      },
+      "formats": {
+        "iban": "ES8901820649010101503063"
+      },
+      "participants": [
+        {
+          "name": "RECREATIVOS JENA S.L."
+        }
+      ],
+      "currency": {
+        "code": "EUR"
+      },
+      "product": {
+        "id": "0CC0000008",
+        "name": "CUENTA CREDITO NEGOCIOS"
+      }
+    },
+    {
+      "id": "ES0182021000000000000000000005581086XXXXXXXXX",
+      "currentBalance": {
+        "currency": "USD",
+        "amount": 66156.35
+      },
+      "availableBalance": {
+        "currency": "USD",
+        "amount": 66158.35
+      },
+      "formats": {
+        "iban": "ES8601824899192108666032"
+      },
+      "participants": [
+        {
+          "name": "RIUSA II S.A."
+        }
+      ],
+      "currency": {
+        "code": "USD"
+      },
+      "product": {
+        "id": "0CCD000002",
+        "name": "CTAS.CREDITO DIVISA"
+      }
+    },
+    {
+      "id": "ES0182002000000000000000000003412499XXXXXXXXX",
+      "currentBalance": {
+        "currency": "EUR",
+        "amount": 23366.06
+      },
+      "availableBalance": {
+        "currency": "EUR",
+        "amount": 23366.06
+      },
+      "formats": {
+        "iban": "ES8601822940400205211673"
+      },
+      "participants": [
+        {
+          "name": "ARS PIROTECNIA S.L."
+        }
+      ],
+      "currency": {
+        "code": "EUR"
+      },
+      "product": {
+        "id": "0000005037",
+        "name": "CUENTA ORDINARIA NO CONS. BEC"
+      }
+    },
+    {
+      "id": "ES0182002000000000000000000259963525XXXXXXXXX",
+      "currentBalance": {
+        "currency": "EUR",
+        "amount": 4412.78
+      },
+      "availableBalance": {
+        "currency": "EUR",
+        "amount": 4412.78
+      },
+      "formats": {
+        "iban": "ES8501826458700201558035"
+      },
+      "participants": [
+        {
+          "name": "TECNO SPUMA S.L."
+        }
+      ],
+      "currency": {
+        "code": "EUR"
+      },
+      "product": {
+        "id": "0000004906",
+        "name": "CUENTA BANCA PRIVADA"
+      }
+    },
+    {
+      "currentBalance": {
+        "currency": "EUR",
+        "amount": 35454.24
+      },
+      "availableBalance": {
+        "currency": "EUR",
+        "amount": 35454.24
+      },
+      "formats": {
+        "iban": "ES8501825639210200300228"
+      },
+      "participants": [
+        {
+          "name": "AYUNTAMIENTO CEHEGIN"
+        }
+      ],
+      "currency": {
+        "code": "EUR"
+      },
+      "product": {
+        "id": "0CA0000288",
+        "name": "CTA.ORDINARIA ADM.PUBLICAS-MIGRACION BCL"
+      }
+    },
+    {
+      "id": "ES0182002000000000000000000157272086XXXXXXXXX",
+      "currentBalance": {
+        "currency": "EUR",
+        "amount": 1691667.51
+      },
+      "availableBalance": {
+        "currency": "EUR",
+        "amount": 1365960.33
+      },
+      "formats": {
+        "iban": "ES8401823999330201530041"
+      },
+      "participants": [
+        {
+          "name": "DACHSER SPAIN S.A."
+        }
+      ],
+      "currency": {
+        "code": "EUR"
+      },
+      "product": {
+        "id": "0CA0000028",
+        "name": "CUENTA ORDINARIA BBVA"
+      }
+    },
+    {
+      "id": "ES0182001000000000000000000246341945XXXXXXXXX",
+      "currentBalance": {
+        "currency": "EUR",
+        "amount": -20480.87
+      },
+      "availableBalance": {
+        "currency": "EUR",
+        "amount": 79519.13
+      },
+      "formats": {
+        "iban": "ES8301825870810101504757"
+      },
+      "participants": [
+        {
+          "name": "JAIME BARTOLI"
+        }
+      ],
+      "currency": {
+        "code": "EUR"
+      },
+      "product": {
+        "id": "0CC0000016",
+        "name": "CTA.CREDITO ORDINARIA"
+      }
+    },
+    {
+      "id": "ES0182000100000000000000000005941265XXXXXXXXX",
+      "currentBalance": {
+        "currency": "EUR",
+        "amount": 1.02
+      },
+      "availableBalance": {
+        "currency": "EUR",
+        "amount": 1.02
+      },
+      "formats": {
+        "iban": "ES8301825475600013004403"
+      },
+      "participants": [
+        {
+          "name": "MOVIMIENTOS DE TIERRAS GUADALETE S.L."
+        }
+      ],
+      "currency": {
+        "code": "EUR"
+      },
+      "product": {
+        "id": "0000005037",
+        "name": "CUENTA ORDINARIA NO CONS. BEC"
+      }
+    },
+    {
+      "id": "ES0182020100000000000000000370376426XXXXXXXXX",
+      "currentBalance": {
+        "currency": "USD",
+        "amount": -148.71
+      },
+      "availableBalance": {
+        "currency": "USD",
+        "amount": -148.71
+      },
+      "formats": {
+        "iban": "ES8201824927512012507036"
+      },
+      "participants": [
+        {
+          "name": "PUNKLANDIA S.L."
+        }
+      ],
+      "currency": {
+        "code": "USD"
+      },
+      "product": {
+        "id": "0CVD000002",
+        "name": "VISTA EN DIVISA"
+      }
+    },
+    {
+      "id": "ES0182001000000000000000000004815501XXXXXXXXX",
+      "currentBalance": {
+        "currency": "EUR",
+        "amount": 1084664.02
+      },
+      "availableBalance": {
+        "currency": "EUR",
+        "amount": 4081749.24
+      },
+      "formats": {
+        "iban": "ES8101823994040100802019"
+      },
+      "participants": [
+        {
+          "name": "PRAXAIR ESPAÑA S.L."
+        }
+      ],
+      "currency": {
+        "code": "EUR"
+      },
+      "product": {
+        "id": "0CC0000018",
+        "name": "CTA.DE CREDITO CORPORATIVA"
+      }
+    },
+    {
+      "id": "ES0182002000000000000000000004510158XXXXXXXXX",
+      "currentBalance": {
+        "currency": "EUR",
+        "amount": 0
+      },
+      "availableBalance": {
+        "currency": "EUR",
+        "amount": 0
+      },
+      "formats": {
+        "iban": "ES8101823365140209108647"
+      },
+      "participants": [
+        {
+          "name": "AGUSTIN VIDAURRETA BLAZQUEZ"
+        }
+      ],
+      "currency": {
+        "code": "EUR"
+      },
+      "product": {
+        "id": "0CA0000044",
+        "name": "CTA.COOPERATIVISTAS COOP.AGRAR"
+      }
+    },
+    {
+      "id": "ES0182002000000000000000000007284195XXXXXXXXX",
+      "currentBalance": {
+        "currency": "EUR",
+        "amount": 1198459.37
+      },
+      "availableBalance": {
+        "currency": "EUR",
+        "amount": 1198102.37
+      },
+      "formats": {
+        "iban": "ES7901823365120208000265"
+      },
+      "participants": [
+        {
+          "name": "SDAD. COOP. AND NTRA SRA DE LOS REMEDIOS"
+        }
+      ],
+      "currency": {
+        "code": "EUR"
+      },
+      "product": {
+        "id": "0CA0000069",
+        "name": "CTA.COOP.AGRARIAS SECCION CTO."
+      }
+    },
+    {
+      "id": "ES0182002000000000000000000005943720XXXXXXXXX",
+      "currentBalance": {
+        "currency": "EUR",
+        "amount": 623851.83
+      },
+      "availableBalance": {
+        "currency": "EUR",
+        "amount": 612514.64
+      },
+      "formats": {
+        "iban": "ES7801825475640205502058"
+      },
+      "participants": [
+        {
+          "name": "ELECAM S.A."
+        }
+      ],
+      "currency": {
+        "code": "EUR"
+      },
+      "product": {
+        "id": "0CA0000028",
+        "name": "CUENTA ORDINARIA BBVA"
+      }
+    },
+    {
+      "id": "ES0182000000000000000000000005209684XXXXXXXXX",
+      "currentBalance": {
+        "currency": "EUR",
+        "amount": 1380825.73
+      },
+      "availableBalance": {
+        "currency": "EUR",
+        "amount": 1380825.73
+      },
+      "formats": {
+        "iban": "ES7601824370840000660257"
+      },
+      "participants": [
+        {
+          "name": "VIRUTEX S.A."
+        }
+      ],
+      "currency": {
+        "code": "EUR"
+      },
+      "product": {
+        "id": "0CA0000013",
+        "name": "ORDINARIA N/CONSUM RESIDENTE"
+      }
+    },
+    {
+      "id": "ES0182001000000000000000000139010505XXXXXXXXX",
+      "currentBalance": {
+        "currency": "EUR",
+        "amount": 94442.97
+      },
+      "availableBalance": {
+        "currency": "EUR",
+        "amount": 118442.97
+      },
+      "formats": {
+        "iban": "ES7501822930700102501287"
+      },
+      "participants": [
+        {
+          "name": "HERMANOS FUENTES REYES SUR S L U"
+        }
+      ],
+      "currency": {
+        "code": "EUR"
+      },
+      "product": {
+        "id": "0CC0000036",
+        "name": "CTA.CTO.VINCULADA PYMES Y PAE´S"
+      }
+    },
+    {
+      "id": "ES0182001000000000000000000248782591XXXXXXXXX",
+      "currentBalance": {
+        "currency": "EUR",
+        "amount": -15526770.42
+      },
+      "availableBalance": {
+        "currency": "EUR",
+        "amount": 4473229.58
+      },
+      "formats": {
+        "iban": "ES7201825423030101518129"
+      },
+      "participants": [
+        {
+          "name": "GENERAL MARKETS FOOD IBERICA S A U"
+        }
+      ],
+      "currency": {
+        "code": "EUR"
+      },
+      "product": {
+        "id": "0CC0000016",
+        "name": "CTA.CREDITO ORDINARIA"
+      }
+    },
+    {
+      "id": "ES0182002000000000000000000275422445XXXXXXXXX",
+      "currentBalance": {
+        "currency": "EUR",
+        "amount": 66302.06
+      },
+      "availableBalance": {
+        "currency": "EUR",
+        "amount": 66302.06
+      },
+      "formats": {
+        "iban": "ES7001824927580201567155"
+      },
+      "participants": [
+        {
+          "name": "PUNKLANDIA S.L."
+        }
+      ],
+      "currency": {
+        "code": "EUR"
+      },
+      "product": {
+        "id": "0CA0000028",
+        "name": "CUENTA ORDINARIA BBVA"
+      }
+    },
+    {
+      "id": "ES0182020100000000000000000007105829XXXXXXXXX",
+      "currentBalance": {
+        "currency": "USD",
+        "amount": 777371.57
+      },
+      "availableBalance": {
+        "currency": "USD",
+        "amount": 777371.57
+      },
+      "formats": {
+        "iban": "ES6701826901712012000032"
+      },
+      "participants": [
+        {
+          "name": "INDUSTRIAS QUIMICAS DEL EBRO S.A."
+        }
+      ],
+      "currency": {
+        "code": "USD"
+      },
+      "product": {
+        "id": "0CVD000002",
+        "name": "VISTA EN DIVISA"
+      }
+    },
+    {
+      "id": "ES0182000100000000000000000001636183XXXXXXXXX",
+      "currentBalance": {
+        "currency": "EUR",
+        "amount": 26071.26
+      },
+      "availableBalance": {
+        "currency": "EUR",
+        "amount": 26071.26
+      },
+      "formats": {
+        "iban": "ES6701822940400011503209"
+      },
+      "participants": [
+        {
+          "name": "JUAN CARLOS BLAZQUEZ RODRIGUEZ"
+        }
+      ],
+      "currency": {
+        "code": "EUR"
+      },
+      "product": {
+        "id": "0CA0000028",
+        "name": "CUENTA ORDINARIA BBVA"
+      }
+    },
+    {
+      "id": "ES0182002000000000000000000009473922XXXXXXXXX",
+      "currentBalance": {
+        "currency": "EUR",
+        "amount": 226673
+      },
+      "availableBalance": {
+        "currency": "EUR",
+        "amount": 226673
+      },
+      "formats": {
+        "iban": "ES6601826458780200367504"
+      },
+      "participants": [
+        {
+          "name": "ENRIQUE MARIA AZCARATE BERNAOLA"
+        }
+      ],
+      "currency": {
+        "code": "EUR"
+      },
+      "product": {
+        "id": "0CA0000009",
+        "name": "CUENTA REFERENCIADA BBVA"
+      }
+    },
+    {
+      "id": "ES0182002000000000000000000003304995XXXXXXXXX",
+      "currentBalance": {
+        "currency": "EUR",
+        "amount": 842.93
+      },
+      "availableBalance": {
+        "currency": "EUR",
+        "amount": 842.93
+      },
+      "formats": {
+        "iban": "ES6501827402580208524495"
+      },
+      "participants": [
+        {
+          "name": "JAIME CLAVO GAMARRA"
+        }
+      ],
+      "currency": {
+        "code": "EUR"
+      },
+      "product": {
+        "id": "0CA0000014",
+        "name": "CUENTA EMPLEADOS BBVA"
+      }
+    },
+    {
+      "id": "ES0182000000000000000000000007103735XXXXXXXXX",
+      "currentBalance": {
+        "currency": "EUR",
+        "amount": 9267050.38
+      },
+      "availableBalance": {
+        "currency": "EUR",
+        "amount": 9149743.54
+      },
+      "formats": {
+        "iban": "ES6501826901770000032467"
+      },
+      "participants": [
+        {
+          "name": "INDUSTRIAS QUIMICAS DEL EBRO S.A."
+        }
+      ],
+      "currency": {
+        "code": "EUR"
+      },
+      "product": {
+        "id": "0CA0000028",
+        "name": "CUENTA ORDINARIA BBVA"
+      }
+    },
+    {
+      "id": "ES0182002000000000000000000233839073XXXXXXXXX",
+      "currentBalance": {
+        "currency": "EUR",
+        "amount": 6474.24
+      },
+      "availableBalance": {
+        "currency": "EUR",
+        "amount": 6474.24
+      },
+      "formats": {
+        "iban": "ES6501825003140208518949"
+      },
+      "participants": [
+        {
+          "name": "CARAVANAS EUROPEAS PAMPLONA S.L."
+        }
+      ],
+      "currency": {
+        "code": "EUR"
+      },
+      "product": {
+        "id": "0CA0000028",
+        "name": "CUENTA ORDINARIA BBVA"
+      }
+    },
+    {
+      "id": "ES0182002000000000000000000001295325XXXXXXXXX",
+      "currentBalance": {
+        "currency": "EUR",
+        "amount": 51.09
+      },
+      "availableBalance": {
+        "currency": "EUR",
+        "amount": 51.09
+      },
+      "formats": {
+        "iban": "ES6101820649000201514884"
+      },
+      "participants": [
+        {
+          "name": "ROSARIO JERICO MARTINEZ"
+        }
+      ],
+      "currency": {
+        "code": "EUR"
+      },
+      "product": {
+        "id": "0CA0000025",
+        "name": "CTA.REINVERSION DIVIDENDOS"
+      }
+    },
+    {
+      "id": "ES0182002000000000000000000003187974XXXXXXXXX",
+      "currentBalance": {
+        "currency": "EUR",
+        "amount": 316.92
+      },
+      "availableBalance": {
+        "currency": "EUR",
+        "amount": 316.92
+      },
+      "formats": {
+        "iban": "ES5701822112200201549951"
+      },
+      "participants": [
+        {
+          "name": "OCIO Y DIVERSION GRANADA S.L."
+        }
+      ],
+      "currency": {
+        "code": "EUR"
+      },
+      "product": {
+        "id": "0CA0000102",
+        "name": "CUENTA NEGOCIOS VINCULADA"
+      }
+    },
+    {
+      "id": "ES0182000000000000000000000003403436XXXXXXXXX",
+      "currentBalance": {
+        "currency": "EUR",
+        "amount": -20
+      },
+      "availableBalance": {
+        "currency": "EUR",
+        "amount": -20
+      },
+      "formats": {
+        "iban": "ES5601826204590000012489"
+      },
+      "participants": [
+        {
+          "name": "CRISTIAN LAY S.A."
+        }
+      ],
+      "currency": {
+        "code": "EUR"
+      },
+      "product": {
+        "id": "0CA0000028",
+        "name": "CUENTA ORDINARIA BBVA"
+      }
+    },
+    {
+      "id": "ES0182000100000000000000000000165623XXXXXXXXX",
+      "currentBalance": {
+        "currency": "EUR",
+        "amount": 126777.08
+      },
+      "availableBalance": {
+        "currency": "EUR",
+        "amount": 126777.08
+      },
+      "formats": {
+        "iban": "ES5101820120730010204758"
+      },
+      "participants": [
+        {
+          "name": "ALDECAL S.L."
+        }
+      ],
+      "currency": {
+        "code": "EUR"
+      },
+      "product": {
+        "id": "0CA0000076",
+        "name": "CUENTA PYMES TIPO REFERENCIADO"
+      }
+    },
+    {
+      "id": "ES0182002000000000000000000266405989XXXXXXXXX",
+      "currentBalance": {
+        "currency": "EUR",
+        "amount": 2105247.3
+      },
+      "availableBalance": {
+        "currency": "EUR",
+        "amount": 2105247.3
+      },
+      "formats": {
+        "iban": "ES4901826458710201559410"
+      },
+      "participants": [
+        {
+          "name": "AURA S.A."
+        }
+      ],
+      "currency": {
+        "code": "EUR"
+      },
+      "product": {
+        "id": "0000004906",
+        "name": "CUENTA BANCA PRIVADA"
+      }
+    },
+    {
+      "id": "ES0182000100000000000000000005941378XXXXXXXXX",
+      "currentBalance": {
+        "currency": "EUR",
+        "amount": 3793775.87
+      },
+      "availableBalance": {
+        "currency": "EUR",
+        "amount": 3778420.44
+      },
+      "formats": {
+        "iban": "ES4801825475620013010464"
+      },
+      "participants": [
+        {
+          "name": "FLIGHT TRAINING EUROPE S.L."
+        }
+      ],
+      "currency": {
+        "code": "EUR"
+      },
+      "product": {
+        "id": "0CA0000028",
+        "name": "CUENTA ORDINARIA BBVA"
+      }
+    },
+    {
+      "id": "ES0182002000000000000000000003375155XXXXXXXXX",
+      "currentBalance": {
+        "currency": "EUR",
+        "amount": 20.2
+      },
+      "availableBalance": {
+        "currency": "EUR",
+        "amount": 20.2
+      },
+      "formats": {
+        "iban": "ES4601822339690201523206"
+      },
+      "participants": [
+        {
+          "name": "CLEAR PET S.L."
+        }
+      ],
+      "currency": {
+        "code": "EUR"
+      },
+      "product": {
+        "id": "0CA0000013",
+        "name": "ORDINARIA N/CONSUM RESIDENTE"
+      }
+    },
+    {
+      "id": "ES0182001000000000000000000270896710XXXXXXXXX",
+      "currentBalance": {
+        "currency": "EUR",
+        "amount": -19416.43
+      },
+      "availableBalance": {
+        "currency": "EUR",
+        "amount": 5583.57
+      },
+      "formats": {
+        "iban": "ES4601822112290101503132"
+      },
+      "participants": [
+        {
+          "name": "MANUEL RUIZ REMACHO"
+        }
+      ],
+      "currency": {
+        "code": "EUR"
+      },
+      "product": {
+        "id": "0000008494",
+        "name": "CUENTA DE CREDITO VINCULADA PAES"
+      }
+    },
+    {
+      "id": "ES0182000100000000000000000004815430XXXXXXXXX",
+      "currentBalance": {
+        "currency": "EUR",
+        "amount": 275090.22
+      },
+      "availableBalance": {
+        "currency": "EUR",
+        "amount": 239264.99
+      },
+      "formats": {
+        "iban": "ES4401823994060018074003"
+      },
+      "participants": [
+        {
+          "name": "EUREST COLECTIVIDADES S.L."
+        }
+      ],
+      "currency": {
+        "code": "EUR"
+      },
+      "product": {
+        "id": "0CA0000013",
+        "name": "ORDINARIA N/CONSUM RESIDENTE"
+      }
+    },
+    {
+      "id": "ES0182002000000000000000000082129802XXXXXXXXX",
+      "currentBalance": {
+        "currency": "EUR",
+        "amount": 0
+      },
+      "availableBalance": {
+        "currency": "EUR",
+        "amount": 0
+      },
+      "formats": {
+        "iban": "ES4401823560650201509142"
+      },
+      "participants": [
+        {
+          "name": "NEUMATICOS LUCENA S.L."
+        }
+      ],
+      "currency": {
+        "code": "EUR"
+      },
+      "product": {
+        "id": "0000005635",
+        "name": "CTA ORDINARIA REMUNE BEC-COR BEC"
+      }
+    },
+    {
+      "id": "ES0182002000000000000000000328764918XXXXXXXXX",
+      "currentBalance": {
+        "currency": "EUR",
+        "amount": 532145.48
+      },
+      "availableBalance": {
+        "currency": "EUR",
+        "amount": 379954.31
+      },
+      "formats": {
+        "iban": "ES4301825429810201626483"
+      },
+      "participants": [
+        {
+          "name": "LICORS JANE S.L."
+        }
+      ],
+      "currency": {
+        "code": "EUR"
+      },
+      "product": {
+        "id": "0000005037",
+        "name": "CUENTA ORDINARIA NO CONS. BEC"
+      }
+    },
+    {
+      "id": "ES0182001000000000000000000004815522XXXXXXXXX",
+      "currentBalance": {
+        "currency": "EUR",
+        "amount": 15538417.93
+      },
+      "availableBalance": {
+        "currency": "EUR",
+        "amount": 18037801.36
+      },
+      "formats": {
+        "iban": "ES4101823994080101500264"
+      },
+      "participants": [
+        {
+          "name": "COMPAÑIA DE DISTRIBUCION INTEGRAL LOGISTA S.A."
+        }
+      ],
+      "currency": {
+        "code": "EUR"
+      },
+      "product": {
+        "id": "0CC0000018",
+        "name": "CTA.DE CREDITO CORPORATIVA"
+      }
+    },
+    {
+      "id": "ES0182002000000000000000000267223933XXXXXXXXX",
+      "currentBalance": {
+        "currency": "EUR",
+        "amount": 215113.11
+      },
+      "availableBalance": {
+        "currency": "EUR",
+        "amount": 215113.11
+      },
+      "formats": {
+        "iban": "ES3901826458710201559687"
+      },
+      "participants": [
+        {
+          "name": "FCION BANCARIA CANARIA CAJA GENERAL DE AHORROS DE CANARIAS"
+        }
+      ],
+      "currency": {
+        "code": "EUR"
+      },
+      "product": {
+        "id": "0000004906",
+        "name": "CUENTA BANCA PRIVADA"
+      }
+    },
+    {
+      "id": "ES0182020100000000000000000188207120XXXXXXXXX",
+      "currentBalance": {
+        "currency": "USD",
+        "amount": 156.06
+      },
+      "availableBalance": {
+        "currency": "USD",
+        "amount": 156.06
+      },
+      "formats": {
+        "iban": "ES3801828760212018041036"
+      },
+      "participants": [
+        {
+          "name": "BATH AND SHOWER S C P"
+        }
+      ],
+      "currency": {
+        "code": "USD"
+      },
+      "product": {
+        "id": "0CVD000002",
+        "name": "VISTA EN DIVISA"
+      }
+    },
+    {
+      "id": "ES0182000100000000000000000004817413XXXXXXXXX",
+      "currentBalance": {
+        "currency": "EUR",
+        "amount": -94304.99
+      },
+      "availableBalance": {
+        "currency": "EUR",
+        "amount": -94604.05
+      },
+      "formats": {
+        "iban": "ES3801823994070014690023"
+      },
+      "participants": [
+        {
+          "name": "ORANGE ESPAGNE S.A."
+        }
+      ],
+      "currency": {
+        "code": "EUR"
+      },
+      "product": {
+        "id": "0CA0000028",
+        "name": "CUENTA ORDINARIA BBVA"
+      }
+    },
+    {
+      "id": "ES0182020100000000000000000005930110XXXXXXXXX",
+      "currentBalance": {
+        "currency": "USD",
+        "amount": 1631.56
+      },
+      "availableBalance": {
+        "currency": "USD",
+        "amount": 1631.56
+      },
+      "formats": {
+        "iban": "ES3701822324602018080031"
+      },
+      "participants": [
+        {
+          "name": "SELENA IBERIA S L U"
+        }
+      ],
+      "currency": {
+        "code": "USD"
+      },
+      "product": {
+        "id": "0CVD000002",
+        "name": "VISTA EN DIVISA"
+      }
+    },
+    {
+      "id": "ES0182002100000000000000000001295964XXXXXXXXX",
+      "currentBalance": {
+        "currency": "EUR",
+        "amount": 14359.75
+      },
+      "availableBalance": {
+        "currency": "EUR",
+        "amount": 14359.75
+      },
+      "formats": {
+        "iban": "ES3501820649040210013132"
+      },
+      "participants": [
+        {
+          "name": "JAVIER JERICO RUETE"
+        }
+      ],
+      "currency": {
+        "code": "EUR"
+      },
+      "product": {
+        "id": "0CA0000089",
+        "name": "LIBRETON"
+      }
+    },
+    {
+      "id": "ES0182020100000000000000000005942552XXXXXXXXX",
+      "currentBalance": {
+        "currency": "USD",
+        "amount": 630.4
+      },
+      "availableBalance": {
+        "currency": "USD",
+        "amount": 630.4
+      },
+      "formats": {
+        "iban": "ES3201825475672012018032"
+      },
+      "participants": [
+        {
+          "name": "FLIGHT TRAINING EUROPE S.L."
+        }
+      ],
+      "currency": {
+        "code": "USD"
+      },
+      "product": {
+        "id": "0CVD000002",
+        "name": "VISTA EN DIVISA"
+      }
+    },
+    {
+      "currentBalance": {
+        "currency": "EUR",
+        "amount": 0
+      },
+      "availableBalance": {
+        "currency": "EUR",
+        "amount": 0
+      },
+      "formats": {
+        "iban": "ES2901822342110207009614"
+      },
+      "participants": [
+        {
+          "name": "ALD AUTOMOTIVE S.A."
+        }
+      ],
+      "currency": {
+        "code": "EUR"
+      },
+      "product": {
+        "id": "0CA0000013",
+        "name": "ORDINARIA N/CONSUM RESIDENTE"
+      }
+    },
+    {
+      "id": "ES0182020100000000000000000081959159XXXXXXXXX",
+      "currentBalance": {
+        "currency": "USD",
+        "amount": 28.09
+      },
+      "availableBalance": {
+        "currency": "USD",
+        "amount": 28.09
+      },
+      "formats": {
+        "iban": "ES2601822393262018040033"
+      },
+      "participants": [
+        {
+          "name": "TIRMA"
+        }
+      ],
+      "currency": {
+        "code": "USD"
+      },
+      "product": {
+        "id": "0CVD000002",
+        "name": "VISTA EN DIVISA"
+      }
+    },
+    {
+      "id": "ES0182000100000000000000000005917339XXXXXXXXX",
+      "currentBalance": {
+        "currency": "EUR",
+        "amount": 8426.43
+      },
+      "availableBalance": {
+        "currency": "EUR",
+        "amount": 8426.43
+      },
+      "formats": {
+        "iban": "ES2501829768010018503108"
+      },
+      "participants": [
+        {
+          "name": "TALLERES JORPA S.L."
+        }
+      ],
+      "currency": {
+        "code": "EUR"
+      },
+      "product": {
+        "id": "0CA0000152",
+        "name": "COMERCIOS-FRANQUICIADOS RESIDE"
+      }
+    },
+    {
+      "id": "ES0182002000000000000000000108909443XXXXXXXXX",
+      "currentBalance": {
+        "currency": "EUR",
+        "amount": 185269.49
+      },
+      "availableBalance": {
+        "currency": "EUR",
+        "amount": 185269.49
+      },
+      "formats": {
+        "iban": "ES2501825646660201506500"
+      },
+      "participants": [
+        {
+          "name": "LIMPERGAL S.L."
+        }
+      ],
+      "currency": {
+        "code": "EUR"
+      },
+      "product": {
+        "id": "0CA0000028",
+        "name": "CUENTA ORDINARIA BBVA"
+      }
+    },
+    {
+      "id": "ES0182020100000000000000000237603974XXXXXXXXX",
+      "currentBalance": {
+        "currency": "MXN",
+        "amount": 18976.65
+      },
+      "availableBalance": {
+        "currency": "MXN",
+        "amount": 18976.65
+      },
+      "formats": {
+        "iban": "ES2501822329982012082274"
+      },
+      "participants": [
+        {
+          "name": "NFOQUE ADVISORY SERVICES S.L."
+        }
+      ],
+      "currency": {
+        "code": "MXN"
+      },
+      "product": {
+        "id": "0CVD000002",
+        "name": "VISTA EN DIVISA"
+      }
+    },
+    {
+      "id": "ES0182020100000000000000000005942549XXXXXXXXX",
+      "currentBalance": {
+        "currency": "GBP",
+        "amount": 100958.73
+      },
+      "availableBalance": {
+        "currency": "GBP",
+        "amount": 100958.73
+      },
+      "formats": {
+        "iban": "ES2401825475622012015026"
+      },
+      "participants": [
+        {
+          "name": "FLIGHT TRAINING EUROPE S.L."
+        }
+      ],
+      "currency": {
+        "code": "GBP"
+      },
+      "product": {
+        "id": "0CVD000002",
+        "name": "VISTA EN DIVISA"
+      }
+    },
+    {
+      "id": "ES0182001000000000000000000081769125XXXXXXXXX",
+      "currentBalance": {
+        "currency": "EUR",
+        "amount": 9400459.83
+      },
+      "availableBalance": {
+        "currency": "EUR",
+        "amount": 9400460.83
+      },
+      "formats": {
+        "iban": "ES2401824647990101500224"
+      },
+      "participants": [
+        {
+          "name": "COMERESA PRENSA S L U"
+        }
+      ],
+      "currency": {
+        "code": "EUR"
+      },
+      "product": {
+        "id": "0CC0000018",
+        "name": "CTA.DE CREDITO CORPORATIVA"
+      }
+    },
+    {
+      "id": "ES0182002000000000000000000249797927XXXXXXXXX",
+      "currentBalance": {
+        "currency": "EUR",
+        "amount": 57452.92
+      },
+      "availableBalance": {
+        "currency": "EUR",
+        "amount": 57452.92
+      },
+      "formats": {
+        "iban": "ES2301826458730201554736"
+      },
+      "participants": [
+        {
+          "name": "FUNDACION EDUCACION Y COOPERACION"
+        }
+      ],
+      "currency": {
+        "code": "EUR"
+      },
+      "product": {
+        "id": "0000004906",
+        "name": "CUENTA BANCA PRIVADA"
+      }
+    },
+    {
+      "id": "ES0182000100000000000000000003371746XXXXXXXXX",
+      "currentBalance": {
+        "currency": "EUR",
+        "amount": 174.3
+      },
+      "availableBalance": {
+        "currency": "EUR",
+        "amount": 174.3
+      },
+      "formats": {
+        "iban": "ES2301822342100018000518"
+      },
+      "participants": [
+        {
+          "name": "DIAGONAL DIR S.A."
+        }
+      ],
+      "currency": {
+        "code": "EUR"
+      },
+      "product": {
+        "id": "0CA0000013",
+        "name": "ORDINARIA N/CONSUM RESIDENTE"
+      }
+    },
+    {
+      "id": "ES0182001000000000000000000138603384XXXXXXXXX",
+      "currentBalance": {
+        "currency": "EUR",
+        "amount": -327233.23
+      },
+      "availableBalance": {
+        "currency": "EUR",
+        "amount": 672766.77
+      },
+      "formats": {
+        "iban": "ES2301822339620101506875"
+      },
+      "participants": [
+        {
+          "name": "GUZMAN GLOBAL S.L."
+        }
+      ],
+      "currency": {
+        "code": "EUR"
+      },
+      "product": {
+        "id": "0CC0000016",
+        "name": "CTA.CREDITO ORDINARIA"
+      }
+    },
+    {
+      "id": "ES0182001000000000000000000158857001XXXXXXXXX",
+      "currentBalance": {
+        "currency": "EUR",
+        "amount": -121525.91
+      },
+      "availableBalance": {
+        "currency": "EUR",
+        "amount": 6959.69
+      },
+      "formats": {
+        "iban": "ES2101825483420101501138"
+      },
+      "participants": [
+        {
+          "name": "COMERCIAL H. MORALES S.L."
+        }
+      ],
+      "currency": {
+        "code": "EUR"
+      },
+      "product": {
+        "id": "0CC0000016",
+        "name": "CTA.CREDITO ORDINARIA"
+      }
+    },
+    {
+      "id": "ES0182002000000000000000000142071871XXXXXXXXX",
+      "currentBalance": {
+        "currency": "EUR",
+        "amount": 1773.84
+      },
+      "availableBalance": {
+        "currency": "EUR",
+        "amount": 1773.84
+      },
+      "formats": {
+        "iban": "ES2101820819660201536850"
+      },
+      "participants": [
+        {
+          "name": "PAULA NING BLAZQUEZ FORS"
+        }
+      ],
+      "currency": {
+        "code": "EUR"
+      },
+      "product": {
+        "id": "0CA0000014",
+        "name": "CUENTA EMPLEADOS BBVA"
+      }
+    },
+    {
+      "id": "ES0182020100000000000000000252457605XXXXXXXXX",
+      "currentBalance": {
+        "currency": "USD",
+        "amount": 1994.96
+      },
+      "availableBalance": {
+        "currency": "USD",
+        "amount": 1994.96
+      },
+      "formats": {
+        "iban": "ES2001826458752012469032"
+      },
+      "participants": [
+        {
+          "name": "FUNDACION EDUCACION Y COOPERACION"
+        }
+      ],
+      "currency": {
+        "code": "USD"
+      },
+      "product": {
+        "id": "0CVD000002",
+        "name": "VISTA EN DIVISA"
+      }
+    },
+    {
+      "id": "ES0182002000000000000000000089032754XXXXXXXXX",
+      "currentBalance": {
+        "currency": "EUR",
+        "amount": 17840.19
+      },
+      "availableBalance": {
+        "currency": "EUR",
+        "amount": 17840.19
+      },
+      "formats": {
+        "iban": "ES1901826560110201537517"
+      },
+      "participants": [
+        {
+          "name": "TESORERIA GENERAL DE LA SEGURIDAD SOCIAL"
+        }
+      ],
+      "currency": {
+        "code": "EUR"
+      },
+      "product": {
+        "id": "0CA0000007",
+        "name": "CTA.REFERENCIADA ADMONES. PUBL"
+      }
+    },
+    {
+      "currentBalance": {
+        "currency": "EUR",
+        "amount": 4042034.48
+      },
+      "availableBalance": {
+        "currency": "EUR",
+        "amount": 4042034.48
+      },
+      "formats": {
+        "iban": "ES1901825437610201205157"
+      },
+      "participants": [
+        {
+          "name": "GAME STORES IBERIA S.L."
+        }
+      ],
+      "currency": {
+        "code": "EUR"
+      },
+      "product": {
+        "id": "0CA0000028",
+        "name": "CUENTA ORDINARIA BBVA"
+      }
+    },
+    {
+      "id": "ES0182002000000000000000000004240365XXXXXXXXX",
+      "currentBalance": {
+        "currency": "EUR",
+        "amount": 7037453.42
+      },
+      "availableBalance": {
+        "currency": "EUR",
+        "amount": 7037453.42
+      },
+      "formats": {
+        "iban": "ES1801823204170201514921"
+      },
+      "participants": [
+        {
+          "name": "PC COMPONENTES Y MULTIMEDIA S.L."
+        }
+      ],
+      "currency": {
+        "code": "EUR"
+      },
+      "product": {
+        "id": "0CA0000028",
+        "name": "CUENTA ORDINARIA BBVA"
+      }
+    },
+    {
+      "id": "ES0182001000000000000000000283004243XXXXXXXXX",
+      "currentBalance": {
+        "currency": "EUR",
+        "amount": 57435.17
+      },
+      "availableBalance": {
+        "currency": "EUR",
+        "amount": 25057435.17
+      },
+      "formats": {
+        "iban": "ES1701825423020101547686"
+      },
+      "participants": [
+        {
+          "name": "GENERAL MARKETS FOOD IBERICA S A U"
+        }
+      ],
+      "currency": {
+        "code": "EUR"
+      },
+      "product": {
+        "id": "0CCX000001",
+        "name": "CREDITO FIJO MIXTO CX(MIGRACION)"
+      }
+    },
+    {
+      "id": "ES0182000000000000000000000003365547XXXXXXXXX",
+      "currentBalance": {
+        "currency": "EUR",
+        "amount": 4388073.25
+      },
+      "availableBalance": {
+        "currency": "EUR",
+        "amount": 4388073.25
+      },
+      "formats": {
+        "iban": "ES1701822329950000142030"
+      },
+      "participants": [
+        {
+          "name": "THE SWATCH GROUP ESPAÑA S.A."
+        }
+      ],
+      "currency": {
+        "code": "EUR"
+      },
+      "product": {
+        "id": "0CA0000013",
+        "name": "ORDINARIA N/CONSUM RESIDENTE"
+      }
+    },
+    {
+      "id": "ES0182002000000000000000000006079816XXXXXXXXX",
+      "currentBalance": {
+        "currency": "EUR",
+        "amount": 513639.79
+      },
+      "availableBalance": {
+        "currency": "EUR",
+        "amount": 513639.79
+      },
+      "formats": {
+        "iban": "ES1701820568710208001279"
+      },
+      "participants": [
+        {
+          "name": "CATOTEX S.L."
+        }
+      ],
+      "currency": {
+        "code": "EUR"
+      },
+      "product": {
+        "id": "0000005037",
+        "name": "CUENTA ORDINARIA NO CONS. BEC"
+      }
+    },
+    {
+      "id": "ES0182002000000000000000000004818324XXXXXXXXX",
+      "currentBalance": {
+        "currency": "EUR",
+        "amount": 6292960.49
+      },
+      "availableBalance": {
+        "currency": "EUR",
+        "amount": 6292960.49
+      },
+      "formats": {
+        "iban": "ES1501823994090208522044"
+      },
+      "participants": [
+        {
+          "name": "ELDUAYEN FOTOVOLTAICA S.L."
+        }
+      ],
+      "currency": {
+        "code": "EUR"
+      },
+      "product": {
+        "id": "0000011965",
+        "name": "CTA PREST SINDICADOS Y ESTRUCTUR"
+      }
+    },
+    {
+      "id": "ES0182000100000000000000000005933288XXXXXXXXX",
+      "currentBalance": {
+        "currency": "EUR",
+        "amount": 96503.24
+      },
+      "availableBalance": {
+        "currency": "EUR",
+        "amount": 96503.24
+      },
+      "formats": {
+        "iban": "ES1501822328400010157636"
+      },
+      "participants": [
+        {
+          "name": "MOTOR ALUCHE S.A."
+        }
+      ],
+      "currency": {
+        "code": "EUR"
+      },
+      "product": {
+        "id": "0CA0000013",
+        "name": "ORDINARIA N/CONSUM RESIDENTE"
+      }
+    },
+    {
+      "id": "ES0182000100000000000000000003185424XXXXXXXXX",
+      "currentBalance": {
+        "currency": "EUR",
+        "amount": 533.58
+      },
+      "availableBalance": {
+        "currency": "EUR",
+        "amount": 533.58
+      },
+      "formats": {
+        "iban": "ES1001822112260011501992"
+      },
+      "participants": [
+        {
+          "name": "ENCARNACION RODRIGUEZ PEREZ"
+        }
+      ],
+      "currency": {
+        "code": "EUR"
+      },
+      "product": {
+        "id": "0CA0000152",
+        "name": "COMERCIOS-FRANQUICIADOS RESIDE"
+      }
+    },
+    {
+      "id": "ES0182000100000000000000000005403142XXXXXXXXX",
+      "currentBalance": {
+        "currency": "EUR",
+        "amount": 1789886.32
+      },
+      "availableBalance": {
+        "currency": "EUR",
+        "amount": 1789886.32
+      },
+      "formats": {
+        "iban": "ES1001821299410010019880"
+      },
+      "participants": [
+        {
+          "name": "POLYNT COMPOSITES SPAIN S.L."
+        }
+      ],
+      "currency": {
+        "code": "EUR"
+      },
+      "product": {
+        "id": "0CA0000017",
+        "name": "CTA.REFERENCIADA N/CONSU.RESI."
+      }
+    },
+    {
+      "id": "ES0182002000000000000000000189793326XXXXXXXXX",
+      "currentBalance": {
+        "currency": "EUR",
+        "amount": 21991.18
+      },
+      "availableBalance": {
+        "currency": "EUR",
+        "amount": 21991.18
+      },
+      "formats": {
+        "iban": "ES0701822325000204026224"
+      },
+      "participants": [
+        {
+          "name": "BC ASECENER S.L."
+        }
+      ],
+      "currency": {
+        "code": "EUR"
+      },
+      "product": {
+        "id": "0CA0000028",
+        "name": "CUENTA ORDINARIA BBVA"
+      }
+    }
+  ],
+  "pagination": {
+    "end": 74,
+    "total": 78,
+    "nextPage": "/netCashAccounts/V01?paginationKey=2&pageSize=74",
+    "lastPage": "/netCashAccounts/V01?paginationKey=2&pageSize=74",
+    "numPages": 2,
+    "firstPage": "/netCashAccounts/V01?pageSize=74",
+    "page": 1,
+    "pageSize": 74,
+    "start": 1
+  }
+}

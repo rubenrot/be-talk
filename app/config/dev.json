@@ -1,0 +1,33 @@
+{
+  "cells_properties": {
+    "deployEndpoint": "",
+    "i18nPath": "locales/",
+    "componentsPath": "./components/",
+    "composerEndpoint": "./composerMocks/",
+    "appId": "",
+    "debug": true,
+    "mocks": true,
+    "coreCache": true,
+    "routerLog": false,
+    "cordovaScript": "cordova.js",
+    "prplLevel": 1,
+    "initialBundle": [
+      "global-position.json"
+    ],
+    "transpile": true,
+    "transpileExclude": [
+      "cells-rxjs",
+      "webcomponentsjs",
+      "moment",
+      "d3",
+      "bgadp*"
+    ]
+  },
+  "app_properties": {
+    "urlSRVLocalFront": "localhost",
+    "urlSRVLocalBack": "elements/mocks",
+    "urlSRVProd1Front": "ec2-34-241-243-186.eu-west-1.compute.amazonaws.com",
+    "urlSRVProd1Back": "elements/mocks"
+
+  }
+}

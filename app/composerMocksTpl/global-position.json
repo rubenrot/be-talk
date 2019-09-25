@@ -1,0 +1,126 @@
+{
+  "template": {
+    "tag": "cells-template-zones",
+    "properties": {
+      "disableEdgeSwipe": true,
+      "headerFixed": true
+    }
+  },
+  "components": [
+    {
+      "zone": "app__header",
+      "familyPath": "../elements/template/fb-header",
+      "tag": "fb-header",
+      "properties": {
+        "cellsConnections": {
+          "out": {
+            "ch_futureconomy_view": {
+              "bind": "futureconomy-view",
+              "link" : {
+                "page" : "futureconomy",
+                "params": {
+                  "detail": "detail"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "zone": "app__main",
+      "familyPath": "../elements/data-managers/position-dm",
+      "tag": "position-dm",
+      "properties": {
+        "cellsConnections": {
+          "in": {
+            "ch_position": {
+              "bind": "getPositionBalance"
+            },
+            "ch_accounts": {
+              "bind": "getAccounts"
+            },
+            "ch_show_accounts": {
+              "bind": "getAccounts"
+            },
+            "ch_show_cards": {
+              "bind": "getCards"
+            },
+            "ch_show_mortgages": {
+              "bind": "getMortgages"
+            },
+            "ch_account_detail": {
+              "bind": "getAccountDetail"
+            }
+          },
+          "out": {
+            "ch_load_accountsold": {
+              "bind": "load-accounts"
+            },
+            "ch_load_accounts": {
+              "bind": "accounts-changed"
+            },
+            "ch_load_cards": {
+              "bind": "cards-changed"
+            },
+            "ch_load_mortgages": {
+              "bind": "mortgages-changed"
+            },
+            "ch_account_detail_view": {
+              "bind": "load-account-detail",
+              "link" : {
+                "page" : "account-detail",
+                "params": {
+                  "detail": "detail"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "zone": "app__main",
+      "familyPath": "../elements/global-position",
+      "tag": "global-position-view",
+      "properties": {
+        "cellsConnections": {
+          "in": {
+            "ch_staff": {
+              "bind": "ready"
+            },
+            "ch_load_accounts": {
+              "bind": "accounts"
+            },
+            "ch_load_cards": {
+              "bind": "cards"
+            },
+            "ch_load_mortgages": {
+              "bind": "mortgages"
+            }
+          },
+          "out": {
+            "ch_position": {
+              "bind": "load-position"
+            },
+            "ch_accounts": {
+              "bind": "get-accounts"
+            },
+            "ch_show_accounts": {
+              "bind": "show-accounts"
+            },
+            "ch_show_cards": {
+              "bind": "show-cards"
+            },
+            "ch_show_mortgages": {
+              "bind": "show-mortgages"
+            },
+            "ch_account_detail": {
+              "bind": "account-detail"
+            }
+          }
+        }
+      }
+    }
+  ]
+}

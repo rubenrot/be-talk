@@ -1,0 +1,51 @@
+<link rel="import" href="../../../components/cells-atom-amount/cells-atom-amount.html">
+<link rel="import" href="../../../components/coronita-icons/coronita-icons.html">
+<link rel="import" href="../../../components/cells-st-button/cells-st-button.html">
+
+<link rel="import" href="../../elements/fb-accounts-list/fb-accounts-list-styles.html">
+
+<dom-module id="fb-account-movements-list">
+  <template>
+
+    <style include="fb-accounts-list-styles"></style>
+
+    <!-- desktop -->
+    <table class="fb-account-list__desktop">
+
+      <thead class="head-descriptors">
+        <tr class="row-descriptors">
+          <th class="account-number">NÚMERO DE CUENTA</th>
+          <th class="identifier">TIPO</th>
+          <th class="amount">IMIPORTE</th>
+        </tr>
+      </thead>
+      <template is="dom-repeat" items="[[movements]]" as="movement" index-as="index">
+        <tbody class="body-account-fields">
+
+        <tr id$="desktop-summary-[[movement.formats.iban]]" class="row-accounts-fields animated fadeInUp" data-request-id$="[[movement.iban]]" data-request-status-id$="[[movement.iban]]"
+            data-viewport="desktop" on-tap="_handleTapOnSummaryElement">
+
+          <td class="account-number accounts-fields__account-number">
+            <span class="transform">[[movement.iban]]</span>
+          </td>
+          <td class="identifier">
+            <span class="transform">[[movement.eventType]]</span>
+          </td>
+
+          <td class="amount accounts-fields__amount">
+            <cells-atom-amount class="limit-amount" amount="[[movement.amount.value]]" currency-code="EUR" language="es"
+                               scale="[[_setScale(movement.amount.value)]]">
+            </cells-atom-amount>
+          </td>
+
+        </tr>
+
+      </template>
+
+    </table>
+
+  </template>
+
+  <script src="fb-account-movements-list.js"></script>
+
+</dom-module>

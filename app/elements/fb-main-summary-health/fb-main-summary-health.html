@@ -1,0 +1,47 @@
+<link rel="import" href="../../elements/fb-cif-selector/fb-cif-selector.html">
+<link rel="import" href="../../../components/cells-d3-donut-chart/cells-d3-donut-chart.html">
+
+
+<link rel="import" href="fb-main-summary-health-styles.html">
+<dom-module id="fb-main-summary-health">
+
+  <template>
+
+    <style include="fb-main-summary-health-styles"></style>
+
+    <div class="container">
+      <div class="cif__selector-container">
+        <fb-cif-selector></fb-cif-selector>
+      </div>
+
+      <div style="padding: 6% 0% 6% 22%;">
+        <cells-d3-donut-chart class="chart" sort="[[sort]]" show-values radius="250" stroke-width="2" stroke-color="#fff" inner-radius="120" data='[{
+        "label": "Colombia",
+        "value": 15,
+        "color": "#F6D686"
+      }, {
+        "label": "España",
+        "value": 40,
+        "color": "#9FDB79"
+      }, {
+        "label": "Chile",
+        "value": 30,
+        "color": "#66BAF7"
+      }, {
+        "label": "Mexico",
+        "value": 20,
+        "color": "#F56AB3"
+      }, {
+        "label": "USA",
+        "value": 10,
+        "color": "#54DBF8"
+      }]'></cells-d3-donut-chart>
+      </div>
+
+    </div>
+
+  </template>
+
+  <script src="fb-main-summary-health.js"></script>
+
+</dom-module>

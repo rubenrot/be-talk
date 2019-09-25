@@ -1,0 +1,73 @@
+<!--
+
+## Styling
+
+The following custom properties and mixins are modified for styling:
+
+| Custom property                           | Description                              | Default                          |
+|:------------------------------------------|:-----------------------------------------| :-------------------------------:|
+| --global-summary-styles                   | Mixin applied :host                      |                                  |
+| --global-sbar-wrapper-styles              | Mixin applied to .sbar__wrapper          | {}                               |
+
+-->
+
+
+<dom-module id="fb-notification-styles">
+
+  <template>
+
+    <style>
+
+      :host {
+        display: block;
+        margin: var( --global-notification )
+      }
+
+      cells-icon-message {
+        display: flex;
+        align-items: center
+      }
+
+      .custom-cells-icon-message {
+        /* margin: 22px 0; */
+        margin: var( --custom-cells-icon-message-margin, 22px 0 );
+        flex-direction: row;
+        padding: 18px 28px;
+        text-align: left;
+        align-items: center;
+        display: flex;
+
+        --cells-icon-message-icon: {
+          margin-bottom: 0;
+          margin-right: 20px
+        };
+
+        --cells-icon-message-warning: {
+          background-color: var( --bbva-white-gold, #f3ebd5 )
+        };
+        --cells-icon-message-icon-color-warning: var( --bbva-gold, #d8be75 );
+
+        @apply(--custom-cells-icon-message);
+      }
+
+      @media (max-width: 991px) {
+        .custom-cells-icon-message {
+          flex-direction: column;
+          padding: 15px;
+          align-items: flex-start;
+
+          --cells-icon-message-icon: {
+            margin-bottom: 10px
+          };
+
+          --cells-icon-message-message: {
+            text-align: left
+          };
+        }
+      }
+
+      </style>
+
+  </template>
+
+</dom-module>

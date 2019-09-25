@@ -1,0 +1,49 @@
+{
+  "id": "46868909J",
+  "totalCuentas": 2888.75,
+  "cuentas": [
+    {
+      "id": "IBANCUENTA1",
+      "movimientos": [
+        {
+          "eventType": "deposit",
+          "iban": "0",
+          "amount": {
+            "currency": "EUR",
+            "value": 600.0
+          },
+          "balance": {
+            "currency": "EUR",
+            "value": 600.0
+          },
+          "date": "2017-10-05T00:0:00Z"
+        },
+        {
+          "eventType": "withdraw",
+          "iban": "1",
+          "amount": {
+            "currency": "EUR",
+            "value": 16.9
+          },
+          "balance": {
+            "currency": "EUR",
+            "value": 2888.75
+          },
+          "date": "2017-10-07T00:00:00Z"
+        }
+      ]
+    }
+  ],
+  "tarjetas": [
+    {
+      "id": "PANTARJETA1",
+      "tipo": "debito",
+      "movimientos": null
+    },
+    {
+      "id": "PANTARJETA2",
+      "tipo": "credito",
+      "movimientos": null
+    }
+  ]
+}

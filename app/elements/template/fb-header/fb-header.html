@@ -1,0 +1,48 @@
+<link rel="import" href="./fb-header-styles.html">
+<link rel="import" href="../../template/fb-grid/fb-grid-styles.html">
+<link rel="import" href="../../fb-loading-page/fb-loading-page.html">
+<!--
+
+## Main Header
+-->
+<dom-module id="fb-header">
+
+  <template>
+
+    <style include="fb-grid-styles fb-header-styles"></style>
+
+    <header>
+      <div class="container-desktop paper-header">
+        <div class="main-menu-container">
+          <div class="main">
+
+            <ul class="title">
+              <li>
+                <img src="resources/images/logoBBVA.png" class="logo" alt="BBVA">
+              </li>
+              <li>
+                <span class="product-title">FuturaBank</span>
+              </li>
+            </ul>
+            <nav class="main-menu">
+              <a class="selected" href="#" on-tap="_navigate" data-page="global-position" style="display: none">El banco del futuro</a>
+              <fb-loading-page></fb-loading-page>
+            </nav>
+          </div>
+        </div>
+
+        <div class="submenu-container">
+          <nav class="submenu">
+            <a class="selected" href="#">Posición Global</a>
+            <a class="selected" on-tap="_navigate">Futureconomy</a>
+          </nav>
+        </div>
+
+      </div>
+    </header>
+
+  </template>
+
+  <script src="fb-header.js"></script>
+
+</dom-module>

@@ -1,0 +1,153 @@
+<dom-module id="fb-drawer-styles">
+
+  <template>
+
+    <style>
+
+      :host {
+        display: block;
+        contain: content;
+        box-sizing: border-box;
+        font-family: var( --cells-fontDefault );
+        width: 100%;
+        height: 100vh;
+        background-color: var( --bbva-navy );
+        padding: 7px 15px
+      }
+
+      nav {
+        margin-top: 40px
+      }
+
+      a {
+        color: var( --bbva-white-50 );
+        display: block;
+        padding: 14px 20px;
+        border-bottom: solid 1px var( --bbva-new-dark-blue, #344967 );
+        text-decoration: none;
+
+        @apply(--cells-fontDefaultMedium);
+      }
+
+      a[data-page*='global-position'],
+      a[data-page*='account-number'] {
+        text-transform: uppercase
+      }
+
+      a.selected {
+        color: var( --bbva-white, #ffffff )
+      }
+
+      a.yellow {
+        color: var( --bbva-yellow, #f8cd51 )
+      }
+
+      iron-icon {
+        --iron-icon-width: 18px;
+        --iron-icon-height: 18px;
+        --iron-icon-fill-color: var( --bbva-white, #ffffff );
+        cursor: pointer
+      }
+
+      iron-icon.disconnect {
+        --iron-icon-fill-color: var( --bbva-dark-yellow, #d9af41 )
+      }
+
+      header {
+        color: var( --bbva-white, #ffffff );
+        font-weight: var( --cells-fontDefaultLight );
+
+        @apply(--cells-font-smoothing);
+      }
+
+      header .top {
+        align-items: center;
+        display: flex;
+        height: 40px;
+        justify-content: space-between
+      }
+
+      ul {
+        @apply(--fb-reset-list);
+      }
+
+      ul.title {
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        color: #fff
+      }
+
+      ul.title li:first-child::after {
+        content: '|';
+        font-size: 25px
+      }
+
+      ul.title li:last-child {
+        margin-left: 5px;
+        font-size: var( --cells-text-size-13-5 )
+      }
+
+      ul.title li:first-child img {
+        padding: 3px 0
+      }
+
+      .logo {
+        height: 29px;
+        vertical-align: top
+      }
+
+      .debtor-pages-selector {
+        border-bottom: solid 1px var( --bbva-new-dark-blue, #344967 );
+        --cells-select-header: {
+          height: auto;
+          padding: 14px 20px;
+          max-height: 48px
+        };
+        --cells-select-bg-color: transparent;
+        --cells-select-label: {
+          font-size: var( --cells-text-size-17 );
+          text-transform: uppercase;
+          color: var( --bbva-white-50 );
+          font-weight: var( --cells-text-weight-medium )
+        };
+        --cells-select-header-icon-color: var( --bbva-white-50 );
+
+        --cells-select-options-item: {
+          font-size: var( --cells-text-size-17 );
+          color: var( --bbva-white-medium-blue );
+          font-weight: var( --cells-text-weight-medium )
+        };
+        --cells-select-item-border-top-color: var( --bbva-200 );
+        --cells-select-item-selected-before-border-top-color: none
+      }
+
+      .debtor-pages-selector.selected {
+        --cells-select-label: {
+          font-weight: var( --cells-text-weight-medium );
+          font-size: var( --cells-text-size-17 );
+          text-transform: uppercase;
+          color: var( --bbva-white-medium-blue )
+        };
+        --cells-select-header-icon-color: var( --bbva-white-medium-blue )
+      }
+
+      cells-select[opened] {
+        --cells-select-header-icon: {
+          transform: rotate( 180deg )
+        };
+
+        --cells-select-label: {
+          font-weight: var( --cells-text-weight-medium );
+          font-size: var( --cells-text-size-17 );
+          text-transform: uppercase;
+          color: var( --bbva-white-medium-blue )
+        };
+        --cells-select-header-icon-color: var( --bbva-white-medium-blue )
+      }
+
+    </style>
+
+  </template>
+
+</dom-module>

@@ -1,0 +1,82 @@
+<dom-module id="page-styles">
+
+  <template>
+    <style>
+
+      ul,
+      li {
+        @apply(--fb-reset-list);
+      }
+
+      @media (max-width: 991px) {
+        .hidden-xs {
+          display: none
+        }
+
+        .container {
+          flex: 1
+        }
+
+        .page-top {
+          margin-bottom: 30px
+        }
+
+        .row--gray {
+          background-color: var( --bbva-100, #f4f4f4 )
+        }
+
+        .row--white {
+          background-color: var( --bbva-white, #ffffff )
+        }
+
+        .row--blue {
+          background: var( --bbva-core-blue, #004481 );
+          padding: 60px 0
+        }
+
+        /*
+        ** responsive utilities
+        **/
+
+        .responsive--txt {
+          display: contents
+        }
+      }
+
+      @media (min-width: 992px) {
+        .container {
+          max-width: var( --app-container-max-width );
+          margin: 0 auto
+        }
+
+        .page-top {
+          background-color: var( --bbva-100, #f4f4f4 );
+          padding: 0 0 50px
+        }
+
+        .row--gray {
+          background-color: var( --bbva-100, #f4f4f4 )
+        }
+
+        .row--white {
+          background-color: var( --bbva-white, #ffffff );
+          padding: 50px 0 0
+        }
+
+        .row--blue {
+          background: var( --bbva-core-blue, #004481 );
+          padding: 60px 0
+        }
+
+        /*
+        ** responsive utilities
+        **/
+        .responsive--txt {
+          display: block
+        }
+      }
+
+    </style>
+  </template>
+
+</dom-module>

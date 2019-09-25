@@ -1,0 +1,158 @@
+<dom-module id="account-detail-styles">
+
+  <template>
+
+    <style>
+
+      :host {
+        display: block;
+        font-family: var( --cells-fontDefault );
+        overflow: hidden;
+        margin-bottom: 70px;
+      }
+
+      hr {
+        box-sizing: border-box;
+        border: 1px solid #d3d3d3;
+        margin: 0 -16px;
+      }
+
+      header {
+        padding-bottom: 20px;
+      }
+
+      .row--gray {
+        padding-bottom: 0;
+      }
+
+      .row--white {
+        padding-top: 20px;
+      }
+
+      .fb__banner-wrapper {
+        padding: 0 1rem;
+      }
+
+      .fb__lines-wrapper {
+        padding: 0 1rem;
+      }
+
+      .heading__bold-1 {
+        padding: 2rem 1rem;
+        background: var( --bbva-100, #f4f4f4 );
+
+        @apply(--heading-bold-1);
+      }
+
+      .heading__medium-2 {
+        margin-bottom: 1rem;
+        margin-top: 2.125rem;
+
+        @apply(--heading-medium-2);
+      }
+
+      .heading__book-2 {
+        @apply(--heading-book-2);
+      }
+
+      .lines-title {
+        font-size: var( --cells-text-size-22, 22px );
+        margin-bottom: 16px;
+
+        @apply (--cells-fontDefaultMedium);
+      }
+
+      .lines .line-section-separator {
+        border-top: 1px solid #d3d3d3;
+        margin-top: 12px;
+        width: 120%;
+        margin-left: -20px;
+      }
+
+      .toast {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-family: var( --cells-fontDefault );
+        font-size: var( --cells-text-size-14, 14px );
+        font-weight: var( --cells-text-weight-light, 300 );
+        --paper-toast-background-color: var( --bbva-white-light-blue, #d4edfc );
+        --paper-toast-color: var( --bbva-600, #121212 );
+        --paper-font-common-base: {
+          min-height: 69px;
+        }
+      }
+
+      .toast .btn {
+        text-transform: none;
+      }
+
+      .toast .icon {
+        margin-left: 20px;
+        --iron-icon-height: 20px;
+        --iron-icon-width: 20px;
+      }
+
+      .toast.success {
+        --paper-toast-background-color: var( --bbva-green, #48ae64 );
+        --paper-toast-color: var( --bbva-white, #ffffff );
+      }
+
+      .toast.error {
+        --paper-toast-background-color: var( --bbva-red, #da3851 );
+        --paper-toast-color: var( --bbva-white, #ffffff );
+      }
+
+      cells-molecule-slider {
+        --cells-molecule-slider-bullet: {
+          height: .9375rem;
+          width: .9375rem;
+          margin-bottom: 10px;
+        };
+        --cells-molecule-slider-bullet-background: var( --bbva-light-blue );
+        --cells-molecule-slider-bullet-background-active: var( --bbva-medium-blue );
+      }
+
+      @media screen and (min-width: 992px) {
+        :host {
+          margin-bottom: 70px;
+        }
+
+        hr {
+          margin: 0
+        }
+
+        .container {
+          padding: 0 1rem;
+          position: relative;
+          padding-top: 42px;
+        }
+
+        .row--gray {
+          padding-bottom: 50px;
+        }
+
+        .fb__banner-wrapper {
+          padding: 0
+        }
+
+        .fb__lines-wrapper {
+          padding: 0;
+        }
+
+        .heading__bold-1 {
+          font-size: var( --cells-text-size-22 );
+          padding: 3rem 0
+        }
+
+        .lines .line-section-separator {
+          width: 100%;
+          margin-left: 0;
+        }
+      }
+
+    </style>
+
+  </template>
+
+</dom-module>

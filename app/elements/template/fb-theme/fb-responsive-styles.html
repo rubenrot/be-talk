@@ -1,0 +1,45 @@
+<dom-module id="responsive-styles">
+
+  <template>
+    <style>
+
+      .hidden {
+        display: none
+      }
+
+      .visibilityHidden {
+        visibility: hidden
+      }
+
+      @media screen and (max-width: 991px) {
+        .hidden-xs {
+          display: none !important
+        }
+
+        /*
+        ** responsive font utilities
+        **/
+
+        .responsive--txt {
+          display: contents
+        }
+      }
+
+      @media screen and (min-width: 992px) {
+        .hidden-md {
+          display: none !important
+        }
+
+        /*
+        ** responsive font  utilities
+        **/
+
+        .responsive--txt {
+          display: block
+        }
+      }
+
+    </style>
+  </template>
+
+</dom-module>

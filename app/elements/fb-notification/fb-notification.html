@@ -1,0 +1,27 @@
+<link rel="import" href="fb-notification-styles.html">
+<link rel="import" href="../../../components/cells-icon-message/cells-icon-message.html">
+<!--
+
+## Notification component
+```html
+<egat-notification type="{[String, one of [success, error, warning or info]]}" message="{[String]}"></egat-notification>
+```
+-->
+<dom-module id="fb-notification">
+
+  <template>
+
+    <style include="fb-notification-styles"></style>
+
+      <cells-icon-message
+      class="custom-cells-icon-message"
+      type="{{type}}"
+      icon="{{icon}}"
+      message="{{message}}">
+    </cells-icon-message>
+
+  </template>
+
+  <script src="fb-notification.js"></script>
+
+</dom-module>

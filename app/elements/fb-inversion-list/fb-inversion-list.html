@@ -1,0 +1,69 @@
+<link rel="import" href="../../../components/coronita-icons/coronita-icons.html">
+<link rel="import" href="../../elements/fb-accounts-list/fb-accounts-list.html">
+<link rel="import" href="../../elements/fb-cards-list/fb-cards-list.html">
+
+<link rel="import" href="fb-inversion-list-styles.html">
+
+<dom-module id="fb-inversion-list">
+
+  <template>
+
+    <style include="fb-inversion-list-styles fb-accounts-list-styles fb-cards-list-styles"></style>
+
+    <div class="container-title-product" on-click="_showAccounts">
+      <template is="dom-if" if="{{domif}}">
+        <div class="more-img">
+          <iron-icon class="show-more__icon" icon="coronita:expand"></iron-icon>
+        </div>
+      </template>
+      <template is="dom-if" if="{{!domif}}">
+        <div class="more-img">
+          <iron-icon class="show-more__icon" icon="coronita:collapse"></iron-icon>
+        </div>
+      </template>
+      <div class="title">
+        <h3 class="heading__book-2">Cuentas</h3>
+      </div>
+    </div>
+    <div class="func-hidden">
+      -
+    </div>
+
+    <template is="dom-if" if="{{!domif}}">
+      <div class="line-subsection-separator"></div>
+      <fb-accounts-list accounts="[[accounts]]">
+      </fb-accounts-list>
+    </template>
+
+
+    <div class="container-title-product" on-click="_showCards">
+      <template is="dom-if" if="{{domifCards}}">
+        <div class="more-img">
+          <iron-icon class="show-more__icon" icon="coronita:expand"></iron-icon>
+        </div>
+      </template>
+      <template is="dom-if" if="{{!domifCards}}">
+        <div class="more-img">
+          <iron-icon class="show-more__icon" icon="coronita:collapse"></iron-icon>
+        </div>
+      </template>
+      <div class="title">
+        <h3 class="heading__book-2">Tarjetas</h3>
+      </div>
+    </div>
+    <div class="func-hidden">
+      -
+    </div>
+
+
+    <template is="dom-if" if="{{!domifCards}}">
+      <div class="line-subsection-separator"></div>
+      <fb-cards-list cards="[[cards]]">
+      </fb-cards-list>
+    </template>
+
+  </template>
+
+  <script src="fb-inversion-list.js"></script>
+
+</dom-module>

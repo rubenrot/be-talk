@@ -1,0 +1,38 @@
+<link rel="import" href="../../../components/coronita-icons/coronita-icons.html">
+<link rel="import" href="../../../components/cells-atom-amount/cells-atom-amount.html">
+<link rel="import" href="../../../components/cells-product-card/cells-product-card.html">
+
+
+<link rel="import" href="fb-card-detail-styles.html">
+
+<dom-module id="fb-card-detail">
+  <template>
+
+    <style include="fb-card-detail-styles"></style>
+
+    <div class="card-container">
+      <cells-product-card id="card-1"
+                          heading="Cuenta nómina"
+                          min-width-for-row-layout="3000"
+                          heading-level="6"
+                          balances='[{"label": "Utilizado", "amount": 5332}, {"label": "Disponible", "amount": 24667}]'
+                          currency-code="EUR"
+                          local-currency="EUR"
+                          image-src="resources/images/bbvaaccount.png"
+                          product-iban="IBAN-0">
+
+        <cells-molecule-link-icon
+          slot="card-link"
+          icon="coronita:return-15"
+          class="icon-size-18 card-icon-link">
+        </cells-molecule-link-icon>
+
+      </cells-product-card>
+    </div>
+
+
+  </template>
+
+  <script src="fb-card-detail.js"></script>
+
+</dom-module>

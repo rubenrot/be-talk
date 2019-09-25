@@ -1,0 +1,48 @@
+<link rel="import" href="../../../components/cells-atom-amount/cells-atom-amount.html">
+<link rel="import" href="../../../components/coronita-icons/coronita-icons.html">
+<link rel="import" href="../../../components/cells-st-button/cells-st-button.html">
+
+<link rel="import" href="fb-cards-list-styles.html">
+
+<dom-module id="fb-cards-list">
+  <template>
+
+    <style include="fb-cards-list-styles"></style>
+
+    <!-- desktop -->
+    <table class="fb-card-list__desktop">
+
+      <thead class="head-descriptors">
+        <tr class="row-descriptors">
+          <th class="card-number">NÚMERO DE TARJETA</th>
+          <th class="identifier">TIPO</th>
+          <th class="identifier">LÍMITE</th>
+        </tr>
+      </thead>
+      <template is="dom-repeat" items="[[cards]]" as="card" index-as="index">
+        <tbody class="body-card-fields">
+
+        <tr class="row-cards-fields animated fadeInUp" data-request-id$="[[card.id]]" data-request-status-id$="[[card.id]]" data-viewport="desktop" on-tap="_handleTapOnSummaryElement">
+
+          <td class="card-number cards-fields__card-number">
+            <span class="transform">[[card.id]]</span>
+          </td>
+          <td class="identifier">
+            <span class="transform">[[card.tipo]]</span>
+          </td>
+
+          <td class="identifier">
+            <cells-atom-amount class="limit-amount" amount="[[card.total]]" currency-code="EUR" language="es">
+            </cells-atom-amount>
+          </td>
+        </tr>
+
+      </template>
+
+    </table>
+
+  </template>
+
+  <script src="fb-cards-list.js"></script>
+
+</dom-module>

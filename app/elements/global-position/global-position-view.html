@@ -1,0 +1,59 @@
+<link rel="import" href="../../../components/cells-coronita-base-theme/cells-coronita-base-theme.html">
+<link rel="import" href="../../../components/cells-st-button/cells-st-button.html">
+<link rel="import" href="../../elements/fb-main-summary/fb-main-summary.html">
+<link rel="import" href="../../elements/fb-notification/fb-notification.html">
+<link rel="import" href="../../elements/fb-inversion-list/fb-inversion-list.html">
+<link rel="import" href="../../elements/fb-financing-list/fb-financing-list.html">
+<link rel="import" href="../../elements/fb-card-detail/fb-card-detail.html">
+
+<link rel="import" href="global-position-styles.html">
+
+<dom-module id="global-position-view">
+  <template>
+    <style include="global-position-styles page-styles"></style>
+
+    <div class="row row--gray">
+      <div class="container">
+        <h1 class="heading__bold-1" id="heading">Visión Global</h1>
+        <section class="main-summary">
+          <fb-main-summary dataset="[[datasetMain]]"></fb-main-summary>
+        </section>
+      </div>
+    </div>
+    <div class="row row--white">
+      <div class="container">
+
+        <section class="fb__lines-wrapper">
+
+          <h2 class="heading__medium-2">Inversión y ahorro</h2>
+          <hr>
+
+          <fb-notification class="notification" type="warning" message="Mensaje de la notificación"></fb-notification>
+
+          <fb-inversion-list id="test-inversion-list"
+                             accounts="[[accounts]]"
+                             cards="[[cards]]">
+
+          </fb-inversion-list>
+
+        </section>
+
+
+        <section class="fb__lines-wrapper">
+
+          <h2 class="heading__medium-2">Financiación</h2>
+          <hr>
+
+          <fb-notification class="notification" type="warning" message="Mensaje de la notificación"></fb-notification>
+
+          <fb-financing-list id="test-financing-list"
+                             mortgages="[[mortgages]]">
+          </fb-financing-list>
+
+        </section>
+      </div>
+    </div>
+
+  </template>
+  <script src="global-position-view.js"></script>
+</dom-module>

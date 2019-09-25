@@ -1,0 +1,50 @@
+<link rel="import" href="../../../components/polymer/polymer.html">
+<script>
+
+(function() {
+window.CellsBehaviors = window.CellsBehaviors || {};
+/**
+* myRoutesBehavior
+* =======================
+*
+* `CellsBehaviors.myRoutesBehavior` provides a normalized interface for services Routing.
+*
+* ## Import
+*
+* 1) Import the behavior in your component:
+*
+* ```html
+* <link rel="import" href="../my-routes-behavior/my-routes-behavior.html">
+* ```
+*
+* 2) Add `CellsBehaviors.MyRoutesBehavior` to the behaviors list in the JS file or script of your component:
+*
+* ```js
+* ...
+* behaviors: [
+*   window.CellsBehaviors.MyRoutesBehavior
+* ],
+* ...
+* ```
+*/
+window.CellsBehaviors.MyRoutesBehavior = {
+
+  getHost: function() {
+    var urlSRVBack = "elements/mocks";
+    var uri = 'https://lambda.appspot.e3r.io/v0/ns/es.p410-futurabank.xxxx-dev/functions';
+
+    // For local environment
+    if (window.location.hostname == window.AppConfig.urlSRVLocalFront) {
+      urlSRVBack = window.AppConfig.urlSRVLocalBack;
+    }
+    // For Prod1 environment
+    else if (window.location.hostname == window.AppConfig.urlSRVProd1Front) {
+      urlSRVBack = window.AppConfig.urlSRVProd1Back;
+    }
+
+
+    return uri;
+  }
+};
+}(window));
+</script>

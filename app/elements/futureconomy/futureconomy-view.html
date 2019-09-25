@@ -1,0 +1,21 @@
+<link rel="import" href="../../../components/cells-coronita-base-theme/cells-coronita-base-theme.html">
+
+<link rel="import" href="../../elements/fb-main-summary-health/fb-main-summary-health.html">
+
+<link rel="import" href="futureconomy-styles.html">
+
+<dom-module id="futureconomy-view">
+  <template>
+    <style include="futureconomy-styles page-styles"></style>
+    <div class="row row--gray">
+      <div class="container">
+        <h1 class="heading__bold-1" id="heading">Salud financiera</h1>
+        <section class="main-summary">
+          <fb-main-summary-health dataset="[[datasetMain]]"></fb-main-summary-health>
+        </section>
+      </div>
+    </div>
+
+  </template>
+  <script src="futureconomy-view.js"></script>
+</dom-module>

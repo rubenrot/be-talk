@@ -1,0 +1,11 @@
+{
+  "name": "futurabankclientfront",
+  "version": "0.1.0",
+  "keywords": [
+    "cells-app"
+  ],
+  "dependencies": {
+    "@polymer/paper-drawer-panel": "^3.0.1",
+    "cells-app-template": "^3.0.8"
+  }
+}

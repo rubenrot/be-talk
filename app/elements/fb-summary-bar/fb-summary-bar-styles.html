@@ -1,0 +1,320 @@
+<!--
+
+## Styling
+
+The following custom properties and mixins are modified for styling:
+
+| Custom property                           | Description                              | Default                          |
+|:------------------------------------------|:-----------------------------------------| :-------------------------------:|
+| --global-summary-styles                   | Mixin applied :host                      |                                  |
+| --global-sbar-wrapper-styles              | Mixin applied to .sbar__wrapper          | {}                               |
+
+-->
+
+<dom-module id="fb-summary-bar-styles">
+  <template>
+
+    <style>
+
+      :host {
+        display: block;
+        contain: content;
+        padding: 0 1rem 1.25rem;
+
+        @apply --global-summary-styles;
+
+        /** Mixins defined and applied for component itself **/
+        --sbar-rhomboid: {
+          -webkit-transform: skew( -25deg );
+          -moz-transform: skew( -25deg );
+          -o-transform: skew( -25deg );
+          transform: skew( -25deg )
+        };
+      }
+
+      /**
+      * Animations
+      */
+
+      @-webkit-keyframes progress-bar {
+        0% {
+          width: 0;
+        }
+      }
+
+      @-moz-keyframes progress-bar {
+        0% {
+          width: 0;
+        }
+      }
+
+      @keyframes progress-bar {
+        0% {
+          width: 0;
+        }
+      }
+
+      .sbar__graphic-container--scaled {
+        position: relative;
+        z-index: 1;
+        -webkit-animation: progress-bar 1.2s ease-in-out;
+        -moz-animation: progress-bar 1.2s ease-in-out;
+        animation: progress-bar 1.2s ease-in-out;
+      }
+
+      cells-atom-amount {
+        font-size: var( --cells-text-size-14 );
+
+        --cells-atom-amount-fractional: {
+          font-size: var( --cells-text-size-14 );
+        };
+
+        --cells-atom-amount-currency: {
+          font-size: var( --cells-text-size-14 );
+          padding-top: -.9375rem;
+        };
+      }
+
+      div[hidden] {
+        display: none;
+      }
+
+      /**
+       * Common styles for both linear & scaled representation
+       */
+      .sbar__container {
+        margin: 16px 0;
+      }
+
+      .sbar__wrapper {
+        width: 100%;
+        position: relative;
+        margin: 28px 0 20px;
+        z-index: 0;
+
+        @apply --global-sbar-wrapper-styles;
+        @apply(--sbar-wrapper);
+      }
+
+      .sbar__legend-color {
+        min-width: 12px;
+        height: 12px;
+        display: inline-block;
+
+        @apply --sbar-rhomboid;
+      }
+
+      .sbar__rhomboid-shadow {
+        -webkit-transform: skew( 57deg );
+        -moz-transform: skew( 57deg );
+        -o-transform: skew( 57deg );
+        position: absolute;
+        box-shadow: -33px -1px 1px 1px rgba( 0, 0, 0, .3 );
+        bottom: 1px;
+        content: '';
+        z-index: -1;
+        width: 15px;
+        height: 5px;
+        left: 26px;
+      }
+
+      .sbar__graphic-line {
+        height: 12px;
+        min-width: 16px;
+
+        @apply --sbar-rhomboid;
+      }
+
+      .sbar__color--marine {
+        background-color: var( --bbva-core-blue );
+      }
+
+      .sbar__color--teal {
+        background-color: var( --bbva-aqua );
+      }
+
+      .sbar__color--red {
+        background-color: var( --bbva-red );
+      }
+
+      .sbar__color--gold {
+        background-color: var( --bbva-gold );
+      }
+
+      .sbar__color--green {
+        background-color: var( --bbva-green );
+      }
+
+      .sbar__color--blue {
+        background-color: var( --bbva-white-core-blue );
+      }
+
+      .sbar__color--grey {
+        background-color: var( --bbva-300 );
+      }
+
+      .sbar__amount {
+        font-size: var( --cells-text-size-l );
+      }
+
+      .sbar__amount--fb-summary-bar-amount-available {
+        font-weight: var( --cells-text-weight-medium );
+
+        @apply(--cells-font-smoothing);
+        @apply(--sbar__amount--fb-summary-bar-amount-available);
+      }
+
+      .sbar__percentage--fb-summary-bar-amount-available {
+        font-weight: var( --cells-text-weight-medium );
+
+        @apply( --cells-font-smoothing );
+      }
+
+      @media (max-width: 991px) {
+        .sbar__wrapper {
+          margin: 20px 0;
+        }
+      }
+
+      /**
+       * Styles for scaled bar
+       */
+
+      .sbar__legend--scaled {
+        display: inline-block;
+        width: 120px;
+      }
+
+      .sbar__color-legend--scaled {
+        height: 12px;
+        min-width: 12px;
+
+        @apply --sbar-rhomboid;
+      }
+
+      .sbar__label--scaled {
+        font-size: var( --cells-text-size-xxxs );
+        min-width: 80px;
+        max-width: 80px;
+        margin-left: 10px;
+        text-transform: uppercase;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: inline-block;
+      }
+
+      .sbar__graphic-wrapper {
+        width: calc( 100% - 125px );
+        display: inline-block;
+      }
+
+
+
+      .sbar__amount--scaled {
+        position: absolute;
+        right: 0;
+        top: -20px;
+      }
+
+      .sbar__amount--short {
+        left: 0;
+      }
+
+      @media (max-width: 991px) {
+        .sbar__wrapper--scaled {
+          flex-direction: column;
+        }
+
+        .sbar__legend--scaled {
+          min-width: 100%;
+          margin-bottom: 30px;
+        }
+
+        .sbar__graphic-wrapper {
+          width: calc( 100% - 10px );
+          margin-left: 10px;
+        }
+
+        .sbar__amount--scaled {
+          left: 10px;
+        }
+      }
+
+      /**
+      * Styles for linear bar
+      */
+
+      .sbar__wrapper--lineal {
+        justify-content: flex-end;
+        flex-wrap: wrap;
+      }
+
+      .sbar__legend--lineal {
+        display: flex;
+        justify-content: flex-end;
+        max-width: 100%;
+        margin: 0 0 10px;
+      }
+
+      .sbar__legend-container {
+        display: flex;
+        padding-left: 20px;
+      }
+
+      .sbar__legend-color--lineal {
+        margin: 0 10px 4px;
+        align-self: flex-end;
+      }
+
+      .sbar__legend-description {
+        flex-grow: 1
+      }
+
+      .sbar__label--lineal {
+        font-size: var( --cells-text-size-xxxs );
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+
+      .sbar__percentage {
+        display: inline-block;
+        font-size: var( --cells-text-size-l )
+      }
+
+      .sbar__graphic-portion {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+      }
+
+      .sbar__graphic-line--lineal {
+        min-width: 1.6%;
+      }
+
+      .line-wrapper {
+        width: 100%;
+        height: 12px;
+        position: relative;
+        z-index: 1;
+        -webkit-animation: progress-bar 1.2s ease-in-out;
+        -moz-animation: progress-bar 1.2s ease-in-out;
+        animation: progress-bar 1.2s ease-in-out;
+      }
+
+      @media (max-width: 991px) {
+        .sbar__legend--lineal {
+          flex-direction: column;
+        }
+
+        .sbar__legend-container {
+          margin: 0 0 15px;
+          padding-left: 0;
+        }
+      }
+
+    </style>
+
+  </template>
+</dom-module>

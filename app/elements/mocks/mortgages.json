@@ -1,0 +1,28 @@
+{
+  "items": [
+    {
+      "id": "XXXXX1",
+      "description": "HIPOTECA MULTIDESTINO",
+      "amortizado": 30000.98,
+      "financiado": 220000.98
+    },
+    {
+      "id": "XXXXX2",
+      "description": "HIPOTECA PERSONAL",
+      "amortizado": 30000.98,
+      "financiado": 220000.98
+    },
+    {
+      "id": "XXXXX3",
+      "description": "HIPOTECA MULTIDESTINO",
+      "amortizado": 30000.98,
+      "financiado": 220000.98
+    },
+    {
+      "id": "XXXXX4",
+      "description": "HIPOTECA MULTIDESTINO",
+      "amortizado": 30000.98,
+      "financiado": 220000.98
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+<link rel="import" href="../../../components/cells-atom-amount/cells-atom-amount.html">
+<link rel="import" href="../../../components/coronita-icons/coronita-icons.html">
+<link rel="import" href="../../../components/cells-st-button/cells-st-button.html">
+
+<link rel="import" href="fb-accounts-list-styles.html">
+
+<dom-module id="fb-accounts-list">
+  <template>
+
+    <style include="fb-accounts-list-styles"></style>
+
+    <!-- desktop -->
+    <table class="fb-account-list__desktop">
+
+      <thead class="head-descriptors">
+        <tr class="row-descriptors">
+          <th class="account-number">NÚMERO DE CUENTA</th>
+
+        </tr>
+      </thead>
+      <template is="dom-repeat" items="[[accounts]]" as="account" index-as="index">
+        <tbody class="body-account-fields">
+
+        <tr id$="desktop-summary-[[account.id]]" class="row-accounts-fields animated fadeInUp" data-request-id$="[[account.id]]" data-request-status-id$="[[account.id]]"
+            data-viewport="desktop" on-tap="_handleTapOnSummaryElement">
+
+          <td class="account-number accounts-fields__account-number">
+            <span class="transform">[[account.id]]</span>
+          </td>
+
+
+        </tr>
+        <tr class$="desktop-summary desktop-summary-[[account.id]] animated fadeInDown" hidden on-tap="_handleClickOnSummary">
+          <td>
+            <div id$="desktop-summary-[[account.id]]">hola</div>
+          </td>
+        </tr>
+
+      </template>
+
+    </table>
+
+  </template>
+
+  <script src="fb-accounts-list.js"></script>
+
+</dom-module>

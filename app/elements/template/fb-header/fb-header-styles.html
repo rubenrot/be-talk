@@ -1,0 +1,338 @@
+<dom-module id="fb-header-styles">
+  <template>
+    <style>
+
+      :host {
+        display: block;
+        font-family: var( --cells-fontDefault );
+        overflow-y: visible;
+        position: relative;
+        z-index: 100
+      }
+
+      header {
+        @apply(--cells-font-smoothing);
+      }
+
+      .main-menu-container{
+        background-color: var( --bbva-navy )
+      }
+
+      .submenu-container{
+        background-color: var( --bbva-core-blue )
+      }
+
+      ul,
+      li {
+        @apply(--fb-reset-list);
+      }
+
+      .top {
+        max-width: var( --app-container-max-width );
+        margin: 0 auto;
+        text-align: right;
+        padding: 30px 16px 0
+      }
+
+      .actions {
+        font-family: var( --cells-fontDefault );
+        font-size: var( --cells-text-size-12 );
+        text-decoration: none;
+        color: var( --bbva-white-50 );
+        font-weight: var( --cells-text-weight-bold );
+        padding: 0 5px;
+        background-color: transparent;
+        border: none;
+        position: relative
+      }
+
+      .actions > span {
+        cursor: pointer
+      }
+
+      .line {
+        color: var( --bbva-white );
+        opacity: .4
+      }
+
+      .top .line {
+        padding: 0 10px
+      }
+
+      .top a.selected {
+        color: var( --bbva-white )
+      }
+
+      .submenu {
+        max-width: var( --app-container-max-width );
+        margin: 0 auto;
+        height: 56px;
+        padding: 0 16px;
+        display: flex;
+        align-items: center
+      }
+
+      .submenu a {
+        text-decoration: none;
+        font-size: var( --cells-text-size-15 );
+        color: var( --bbva-white );
+        opacity: .5;
+        font-weight: var( --cells-text-weight-light );
+        margin-right: 32px;
+        cursor: pointer
+      }
+
+      .submenu a.selected {
+        opacity: 1
+      }
+
+      .main {
+        max-width: var( --app-container-max-width );
+        /*margin: 0 0;*/
+        /*padding: 10px 16px;*/
+        margin: 0 auto;
+        padding: 0px 0px;
+        display: flex;
+        color: var( --bbva-white );
+        align-items: center;
+        justify-content: space-between
+      }
+
+      .main .title {
+        font-size: var( --cells-text-size-13-5 );
+        font-weight: var( --cells-text-weight-light );
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center
+      }
+
+      .main .title li:first-child::after {
+        content: '|';
+        font-size: 29px;
+        float: right;
+        margin: 26px 12px 0px 14px
+      }
+
+      .main .title li:first-child img {
+        padding: 3px 0
+      }
+
+      .main .title li:last-child{
+        margin-left: 5px
+      }
+
+      .main .title li:last-child span{
+        vertical-align: middle
+      }
+
+      .main .line {
+        padding: 0 4px;
+        vertical-align: top
+      }
+
+      .logo {
+        height: 80px;
+        vertical-align: top
+      }
+
+      .main-menu a {
+        text-transform: uppercase;
+        text-decoration: none;
+        padding: 1px 15px;
+        font-size: var( --cells-text-size-14 );
+        color: var( --bbva-white );
+
+        @apply( --cells-fontDefaultMedium );
+      }
+
+      .user-menu a.logout {
+        color: var( --bbva-yellow )
+      }
+
+      .main-menu a.selected {
+        font-weight: var( --cells-text-weight-medium )
+      }
+
+      .user-menu a {
+        text-decoration: none;
+        color: var( --bbva-white );
+        font-size: var( --cells-text-size-12 );
+        padding: 1px 5px;
+
+        @apply(--cells-fontDefaultBold);
+      }
+
+      .user-menu {
+        --paper-icon-button: {
+          height: 35px
+        };
+      }
+
+      .contact-info-button {
+        position: relative
+      }
+
+      .contact-info-bubble {
+        z-index: 50;
+        position: absolute;
+        margin-top: 14px;
+        right: 25%;
+        background: #ffffff;
+        box-shadow: 0 -1px 6px 0 rgba( 0, 0, 0, .3 );
+        color: var( --bbva-600 );
+        padding: 50px 30px;
+        width: 500px
+      }
+
+      .contact-info-bubble::after {
+        z-index: 0;
+        bottom: 100%;
+        right: 10px;
+        border: 10px solid rgba( 255, 255, 255, 0 );
+        content: ' ';
+        height: 0;
+        width: 0;
+        position: absolute;
+        pointer-events: none;
+        border-bottom-color: #ffffff;
+        margin-left: -10px;
+        filter: drop-shadow( 0 -1px 1px rgba( 104, 104, 104, .5 ) )
+      }
+
+      .contact-info-bubble .contact-information-container {
+        text-align: left
+      }
+
+      .contact-info-bubble h2 {
+        font-size: var( --cells-text-size-24 );
+        font-weight: var( --cells-text-weight-medium );
+        margin-top: 0;
+        margin-bottom: 10px
+      }
+
+      .contact-info-bubble p {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-size: var( --cells-text-size-14 );
+        font-weight: var( --cells-text-weight-light )
+      }
+
+      .contact-info-bubble .subtitle {
+        font-size: var( --cells-text-size-18 );
+        font-weight: var( --cells-text-weight-light )
+      }
+
+      .contact-info-bubble .contact {
+        color: var( --bbva-new-medium-blue );
+        font-size: var( --cells-text-size-16 );
+        font-weight: var( --cells-text-weight-medium );
+        cursor: pointer
+      }
+
+      .contact-info-bubble a {
+        color: var( --bbva-new-medium-blue );
+        text-decoration: none
+      }
+
+      .contact-info-bubble .line {
+        border: 1px solid var( --bbva-300 )
+      }
+
+      .contact-info-bubble .desc {
+        color: var( --bbva-500 );
+        font-size: var( --cells-text-size-13 );
+        font-weight: var( --cells-text-weight-light );
+        font-style: italic
+      }
+
+      .contact-info-bubble .contact iron-icon {
+        --iron-icon-width: 16px;
+        --iron-icon-height: 16px
+      }
+
+      .animated {
+        animation-duration: 1s;
+        animation-fill-mode: both
+      }
+
+      .fadeIn {
+        animation-name: fadeIn
+      }
+
+      .mobile {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: var( --bbva-navy );
+        --iron-icon-fill-color: var( --bbva-white );
+        --paper-icon-button: {
+          height: 35px
+        };
+      }
+
+      .logo-mobile {
+        height: 20px
+      }
+
+      @media screen and (max-width: 991px) {
+        header {
+          padding: 0;
+          min-height: 50px
+        }
+
+        .mobile {
+          height: 50px
+        }
+
+        .header__menu {
+          width: 0
+        }
+
+        ul.title {
+          display: flex;
+          flex-flow: row nowrap;
+          align-items: center;
+          color: #fff
+        }
+
+        ul.title li:first-child::after {
+          content: '|';
+          font-size: 25px;
+        }
+
+        ul.title li:last-child {
+          margin-left: 5px;
+          font-size: var( --cells-text-size-13-5 )
+        }
+
+        ul.title li:first-child img {
+          padding: 3px 0
+        }
+      }
+
+      @media screen and (min-width: 992px) {
+        .container-mobile {
+          display: none
+        }
+
+        .container-desktop {
+          display: block
+        }
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0
+        }
+
+        to {
+          opacity: 1
+        }
+      }
+
+    </style>
+  </template>
+</dom-module>

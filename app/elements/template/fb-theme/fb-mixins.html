@@ -1,0 +1,127 @@
+<style is="custom-style">
+    :root {
+      /**
+      MIXIN
+      reset text width
+      **/
+
+      --fb-ellipsis: {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis
+      };
+
+      /**
+      MIXIN
+      reset all list values
+      **/
+
+      --fb-reset-list: {
+        margin: 0;
+        padding: 0;
+        list-style: none
+      };
+
+      /**
+      MIXIN
+      apply flex properties basics
+      **/
+
+      --fb-flex-basic: {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between
+      };
+
+      /**************************** HEADINGS
+      /**
+      MIXIN
+      apply headings level 1-5
+      **/
+
+      --heading-bold-1: {
+        font-size: var( --cells-text-size-20 );
+        font-weight: var( --cells-text-weight-bold );
+        color: var( --bbva-600 );
+        line-height: var( --cells-text-size-28 );
+        margin: 0
+      };
+
+      --heading-medium-2: {
+        font-size: var( --cells-text-size-22 );
+        font-weight: var( --cells-text-weight-medium );
+        color: var( --bbva-600 );
+        line-height: var( --cells-text-size-28 )
+      };
+
+      --heading-book-2: {
+        font-size: var( --cells-text-size-22 );
+        font-weight: var( --cells-text-weight-book );
+        color: var( --bbva-600 );
+        line-height: var( --cells-text-size-28 )
+      };
+
+      /**************************** FONTS
+      /**
+      MIXIN
+      apply fonts Book - BBVA 600
+      **/
+
+      --fb-font15-bbva-600: {
+        font-size: var( --cells-text-size-15 );
+        line-height: var( --cells-text-size-32 );
+        font-weight: var( --cells-text-weight-light );
+        color: var( --bbva-600 )
+      };
+
+      --fb-font16-bbva-600-bold: {
+        font-size: var( --cells-text-size-16 );
+        line-height: var( --cells-text-size-24 );
+        font-weight: var( --cells-text-weight-bold );
+        color: var( --bbva-600 )
+      };
+
+      --fb-font18-bbva-600: {
+        font-size: var( --cells-text-size-18 );
+        line-height: var( --cells-text-size-24 );
+        font-weight: var( --cells-text-weight-normal );
+        color: var( --bbva-600 )
+      };
+
+      --fb-font22-bbva-600: {
+        font-size: var( --cells-text-size-22 );
+        line-height: var( --cells-text-size-29 );
+        font-weight: var( --cells-text-weight-normal );
+        color: var( --bbva-600 );
+
+        @apply(--global-fb-font22-bbva-600);
+      };
+
+      /**
+      MIXIN
+      apply fonts Medium - BBVA 600
+      **/
+
+      --fb-font15-medium-bbva-600: {
+        font-size: var( --cells-text-size-15 );
+        line-height: var( --cells-text-size-29 );
+        font-weight: var( --cells-text-weight-medium );
+        color: var( --bbva-600 )
+      };
+
+      --fb-font20-medium-bbva-600: {
+        font-size: var( --cells-text-size-22 );
+        line-height: var( --cells-text-size-29 );
+        font-weight: var( --cells-text-weight-medium );
+        color: var( --bbva-600 )
+      };
+
+      --fb-font22-medium-bbva-600: {
+        font-size: var( --cells-text-size-22 );
+        line-height: var( --cells-text-size-29 );
+        font-weight: var( --cells-text-weight-medium );
+        -webkit-font-smoothing: antialiased
+      };
+    }
+
+  </style>

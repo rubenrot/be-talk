@@ -1,0 +1,87 @@
+{
+  "items": [
+    {
+      "id": "16291993N",
+      "customerId": "0hn4hl5xmrgaed8y",
+      "permissionType": {
+        "id": "C"
+      },
+      "powerSign": {
+        "id": "S"
+      },
+      "signLimit": {
+        "currency": "EUR",
+        "amount": 0.0
+      },
+      "alias": "Alias0",
+      "isFavourite": false,
+      "name": "RUBÉN ROT GONZÁLEZ"
+    },
+    {
+      "id": "A0896010",
+      "permissionType": {
+        "id": "C"
+      },
+      "powerSign": {
+        "id": "S"
+      },
+      "signLimit": {
+        "currency": "EUR",
+        "amount": 0.0
+      },
+      "alias": "Alias0",
+      "isFavourite": false,
+      "name": "MARCELINO GALÁN"
+    },
+    {
+      "id": "A81056856",
+      "permissionType": {
+        "id": "C"
+      },
+      "powerSign": {
+        "id": "S"
+      },
+      "signLimit": {
+        "currency": "EUR",
+        "amount": 0.0
+      },
+      "alias": "Alias0",
+      "isFavourite": false,
+      "name": ""
+    },
+    {
+      "id": "A28004026",
+      "customerId": "t74tq8fslhgi9jnv",
+      "permissionType": {
+        "id": "C"
+      },
+      "powerSign": {
+        "id": "S"
+      },
+      "signLimit": {
+        "currency": "EUR",
+        "amount": 0.0
+      },
+      "alias": "Alias0",
+      "isFavourite": false,
+      "name": "IVÁN MEDÍN PEREZ LAGO"
+    },
+    {
+      "id": "A48265169",
+      "customerId": "6lqxf0lt9jsedblq",
+      "permissionType": {
+        "id": "C"
+      },
+      "powerSign": {
+        "id": "S"
+      },
+      "signLimit": {
+        "currency": "EUR",
+        "amount": 0.0
+      },
+      "alias": "Alias0",
+      "isFavourite": false,
+      "name": "ANDRÉSARROLLO"
+    }
+  ]
+}

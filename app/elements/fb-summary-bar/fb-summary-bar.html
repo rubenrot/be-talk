@@ -1,0 +1,40 @@
+<link rel="import" href="fb-summary-bar-styles.html">
+<link rel="import" href="../../../components/iron-media-query/iron-media-query.html">
+<link rel="import" href="../../../components/cells-atom-amount/cells-atom-amount.html">
+
+<dom-module id="fb-summary-bar">
+  <template>
+
+    <style include="fb-summary-bar-styles"></style>
+    <iron-media-query query="max-width: 991px">
+    </iron-media-query>
+
+    <figure class="sbar__container">
+
+
+          <div class="sbar__wrapper sbar__wrapper--scaled">
+
+            <div class="sbar__legend--scaled">
+              <div class$="sbar__legend-color sbar__color--[[color]]"></div>
+              <div class="sbar__label--scaled">[[label]]</div>
+            </div>
+
+            <div class="sbar__graphic-wrapper">
+              <div style$="width:[[sizebar]]%; margin-left:0%;" class="sbar__graphic-container--scaled">
+                <div class$="sbar__graphic-line sbar__color--[[color]]"></div>
+                <div class="sbar__rhomboid-shadow"></div>
+                <cells-atom-amount class$="sbar__amount sbar__amount--scaled sbar__amount--[[label]] amount-large"
+                                   amount="[[amount]]"
+                                   currency-code="[[currency]]"
+                                   language="es"></cells-atom-amount>
+              </div>
+            </div>
+
+          </div>
+
+    </figure>
+  </template>
+
+  <script src="fb-summary-bar.js"></script>
+
+</dom-module>
